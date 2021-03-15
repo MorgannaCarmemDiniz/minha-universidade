@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="text-center py-4">
+    <div class="mb-3">
+        <div class="text-center py-4 header">
             <h1>
                 <router-link to="/">
                     Minha Universidade
@@ -11,15 +11,27 @@
 
         <!-- NAV -->
         <b-navbar type="dark" class="navBar">
-            <b-navbar-nav>
-                <b-nav-item-dropdown text="UNIRIO">
-                    <b-dropdown-item>
-                        <router-link to="/qdd2020">
-                            QDD 2020
+            <b-container>
+                <b-navbar-nav>
+                    <b-nav-item>
+                        <router-link to="/">
+                            Início
                         </router-link>
-                    </b-dropdown-item>
-                </b-nav-item-dropdown>
-            </b-navbar-nav>
+                    </b-nav-item>
+                    <b-nav-item>
+                        <router-link to="/glossario">
+                            Glossário
+                        </router-link>
+                    </b-nav-item>
+                    <b-nav-item-dropdown text="UNIRIO">
+                        <b-dropdown-item>
+                            <router-link to="/qdd2020">
+                                QDD 2020
+                            </router-link>
+                        </b-dropdown-item>
+                    </b-nav-item-dropdown>
+                </b-navbar-nav>
+            </b-container>
         </b-navbar>
     </div>
 </template>
@@ -32,8 +44,13 @@
 </script>
 
 <style lang="scss" scoped>
+    .header {
+        background-color: #f5f5f5;
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: normal;
 
         a:hover {
             text-decoration: none;
@@ -41,7 +58,7 @@
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .navBar {
