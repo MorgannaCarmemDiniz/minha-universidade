@@ -1,0 +1,22 @@
+export const unirio = {
+    code: 'unirio',
+    name: 'Universidade Federal do Estado do Rio de Janeiro',
+    shortName: 'UNIRIO',
+    UOs: {
+        UNIRIO: "26269",
+        HUGG: "26391"
+    },
+    UGs: {
+        UNIRIO: "154034",
+        HUGG: "154035"
+    },
+    datasheets: [],
+
+    getImage: () => require('../assets/unirioLogo.png')
+};
+
+const universities = [
+    unirio
+];
+
+export default universities;

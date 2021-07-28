@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-3">
+    <div class="mb-3 wrap">
         <div class="text-center py-4 header">
             <h1>
                 <router-link to="/">
@@ -10,26 +10,18 @@
         </div>
 
         <!-- NAV -->
-        <b-navbar type="dark" class="navBar">
+        <b-navbar class="navBar">
             <b-container>
-                <b-navbar-nav>
-                    <b-nav-item>
-                        <router-link to="/">
-                            Início
-                        </router-link>
-                    </b-nav-item>
-                    <b-nav-item>
-                        <router-link to="/glossario">
-                            Glossário
-                        </router-link>
-                    </b-nav-item>
-                    <b-nav-item-dropdown text="UNIRIO">
-                        <b-dropdown-item>
-                            <router-link to="/qdd2020">
-                                QDD 2020
-                            </router-link>
-                        </b-dropdown-item>
-                    </b-nav-item-dropdown>
+                <b-navbar-nav class="nav">
+                    <router-link class="navItem" to="/">
+                        Início
+                    </router-link>
+                    <router-link class="navItem" to="/glossario">
+                        Glossário
+                    </router-link>
+                    <router-link class="navItem" to="/universidades">
+                        Universidades
+                    </router-link>
                 </b-navbar-nav>
             </b-container>
         </b-navbar>
@@ -38,12 +30,16 @@
 
 <script>
     export default {
-        name: "SiteHeader",
-        data: () => ({})
+        name: "SiteHeader"
     }
 </script>
 
 <style lang="scss" scoped>
+    .wrap {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
     .header {
         background-color: #f5f5f5;
     }
@@ -62,10 +58,31 @@
     }
 
     .navBar {
-        background-color: black;
+        $textColor: #e2e2e2;
+        $bgColor: black;
 
-        >* {
-            color: white !important;
+        background-color: $bgColor;
+
+        a {
+            text-decoration: none !important;
+            color: $textColor;
+        }
+
+        .nav {
+            * + * {
+                margin-left: 20px;
+            }
+        }
+
+        .navItem {
+            padding: 5px;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s;
+
+            &:hover {
+                color: darken($textColor, 10%);
+                background-color: lighten($bgColor, 10%);
+            }
         }
     }
 </style>

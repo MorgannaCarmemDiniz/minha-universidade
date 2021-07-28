@@ -1,6 +1,13 @@
-export default {
+const expenseCategories = {
     categoria: {},
-    natureza: {},
+    natureza: {
+        1: 'PESSOAL E ENCARGOS SOCIAIS',
+        2: 'JUROS E ENCARGOS DA DÍVIDA',
+        3: 'OUTRAS DESPESAS CORRENTES',
+        4: 'INVESTIMENTOS',
+        5: 'INVERSÕES FINANCEIRAS',
+        6: 'AMORTIZAÇÃO DA DÍVIDA'
+    },
     modalidade: {
         20: 'Transferências à União',
         30: 'Transferências aos Estados e ao DF',
@@ -115,5 +122,8 @@ export default {
         98: 'Compensações ao RGPS',
         99: 'A Classificar'
     },
-    subelemento: {}
-}
+    subelemento: {},
+
+};
+
+export default expenseCategories;

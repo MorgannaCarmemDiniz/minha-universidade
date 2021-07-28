@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import QDD2020 from "../views/QDD2020";
 import Glossario from "../views/Glossario";
+import Universidade from "../views/Universidade";
+import Universidades from "../views/Universidades";
+import ViewDataSheet from "../views/ViewDataSheet";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -13,14 +15,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/qdd2020',
-    name: 'QDD UNIRIO 2020',
-    component: QDD2020
+    path: '/universidade/:university',
+    name: 'university',
+    component: Universidade
+  },
+  {
+    path: '/universidade/:university/:year/:sheet',
+    name: 'viewDataSheet',
+    component: ViewDataSheet
   },
   {
     path: '/glossario',
     name: 'Glossário',
     component: Glossario
+  },
+  {
+    path: '/universidades',
+    name: 'Universidades',
+    component: Universidades
   }
 ]
 
