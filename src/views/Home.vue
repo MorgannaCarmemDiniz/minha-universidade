@@ -6,7 +6,7 @@
       <div class="homeInfo">
         <h3>Minha Universidade</h3>
         <h4>
-          Relatórios financeiros de Universidades Federais Públicas brasileiras
+          Relatórios financeiros de Universidades Públicas Federais brasileiras
         </h4>
         <router-link to="/universidades">
           <b-button variant="primary">Universidades</b-button>
