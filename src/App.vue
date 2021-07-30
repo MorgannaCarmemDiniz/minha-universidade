@@ -2,7 +2,9 @@
   <div id="app">
     <SiteHeader/>
     <b-container class="wrap">
-      <router-view/>
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
     </b-container>
     <transition name="slide-fade">
       <button v-b-tooltip.hover.left.ds900 title="Ir para o topo" class="scrollToTop" v-if="showButton" @click="scrollToTop">
@@ -54,6 +56,13 @@
 
   .slide-fade-enter, .slide-fade-leave-to {
     transform: translateY(30px);
+    opacity: 0;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .1s;
+  }
+  .fade-enter, .fade-leave-to {
     opacity: 0;
   }
 

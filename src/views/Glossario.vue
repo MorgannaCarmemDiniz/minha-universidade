@@ -685,7 +685,6 @@
 
             </div>
             </transition>
-
         </b-col>
     </b-row>
 </template>

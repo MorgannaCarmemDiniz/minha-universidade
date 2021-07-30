@@ -38,6 +38,7 @@
     .wrap {
         flex-grow: 0;
         flex-shrink: 0;
+        z-index: 10;
     }
 
     .header {
