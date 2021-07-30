@@ -1,6 +1,6 @@
 <template>
     <div v-if="loaded">
-        <h3>Ações Orçamentárias {{year}}</h3>
+        <h3>{{university.shortName}} - Ações Orçamentárias {{year}}</h3>
         <p>Uma despesa pode ser financeira, primária obrigatória ou primária discricionária.
             A tabela abaixo mostra as ações do orçamento {{year}} e os seus respectivos valores alocados divididos em <b>Pago</b> e <b>Restos a Pagar</b>.</p>
         <table>
@@ -177,6 +177,10 @@
             },
             year: {
                 type: String,
+                required: true
+            },
+            university: {
+                type: Object,
                 required: true
             }
         },

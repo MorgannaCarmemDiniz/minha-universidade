@@ -1,7 +1,7 @@
 <template>
     <div class="universityCard">
         <div class="universityLogo">
-            <img :src="university.getImage()" alt="">
+            <img :src="university.getLogo()" alt="">
         </div>
         <div class="universityInfo">
             <h2>{{university.shortName}}</h2>

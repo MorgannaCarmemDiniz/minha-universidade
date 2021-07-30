@@ -1,6 +1,6 @@
 <template>
     <div v-if="loaded">
-        <h3>Valor Pago {{year}}</h3>
+        <h3>{{university.shortName}} - Valor Pago {{year}}</h3>
         <h4>Unidades Gestoras: UNIRIO e HUGG</h4>
         <p>A UNIRIO não disponibilizou a execução orçamentária do exercício de {{year}}.
             Entretanto, o Projeto <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html" target="_blank">DATAUNIRIO</a> conseguiu extrair os dados da execução orçamentária da UNIRIO e do HUGG que existem no site <a href="https://www12.senado.leg.br/orcamento/sigabrasil" target="_blank">SIGA BRASIL</a>.
@@ -228,6 +228,10 @@
             },
             year: {
                 type: String,
+                required: true
+            },
+            university: {
+                type: Object,
                 required: true
             }
         },

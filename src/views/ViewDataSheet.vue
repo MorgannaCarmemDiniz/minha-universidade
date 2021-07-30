@@ -5,6 +5,7 @@
                 :is="viewComponent"
                 :dataSheetData="dataSheetData"
                 :year="this.$route.params.year"
+                :university="university"
         />
     </div>
 </template>
@@ -19,6 +20,7 @@
             viewComponent: null,
             dataSheet: null,
             dataSheetData: null,
+            university: null
         }),
         watch: {
             $route: {
@@ -36,9 +38,9 @@
                 this.viewComponent = null;
                 this.dataSheetData = null;
 
-                let uni = await universityService.getByCode(this.$route.params.university);
+                this.university = await universityService.getByCode(this.$route.params.university);
 
-                this.dataSheet = uni.datasheets.find(
+                this.dataSheet = this.university.datasheets.find(
                     ds => ds.year == this.$route.params.year && ds.type.code === this.$route.params.sheet
                 );
 

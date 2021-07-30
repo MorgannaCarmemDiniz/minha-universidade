@@ -12,7 +12,8 @@ export const unirio = {
     },
     datasheets: [],
 
-    getImage: () => require('../assets/unirioLogo.png')
+    getLogo: () => require('../assets/unirioLogo.png'),
+    getImage: () => require('../assets/unirio.jpg')
 };
 
 const universities = [

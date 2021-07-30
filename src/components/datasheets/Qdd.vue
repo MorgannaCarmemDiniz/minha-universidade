@@ -1,6 +1,6 @@
 <template>
     <div v-if="loaded">
-        <h3>Quadro de Detalhamento de Despesa {{year}}</h3>
+        <h3>{{university.shortName}} - Quadro de Detalhamento de Despesa {{year}}</h3>
         <table>
             <caption>
                 Fonte dos dados:
@@ -89,11 +89,6 @@
                 </td>
             </tr>
         </table>
-        <!--
-        <div>
-            <PizzaChart :chartData="qdd" :options="{}" />
-        </div>
-        -->
     </div>
 </template>
 
@@ -114,6 +109,10 @@
             },
             year: {
                 type: String,
+                required: true
+            },
+            university: {
+                type: Object,
                 required: true
             }
         },

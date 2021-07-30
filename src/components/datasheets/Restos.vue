@@ -1,6 +1,6 @@
 <template>
     <div v-if="loaded">
-        <h3>Restos a Pagar {{year}}</h3>
+        <h3>{{university.shortName}} - Restos a Pagar {{year}}</h3>
         <p>A tabela mostra os valores que foram pagos em {{year}}, mas que pertencem aos orçamentos dos anos anteriores.</p>
         <table>
             <caption>
@@ -92,7 +92,6 @@
                 </td>
             </tr>
         </table>
-
     </div>
 </template>
 
@@ -113,6 +112,10 @@
             },
             year: {
                 type: String,
+                required: true
+            },
+            university: {
+                type: Object,
                 required: true
             }
         },
