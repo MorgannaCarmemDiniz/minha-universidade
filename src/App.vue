@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <SiteHeader/>
-    <b-container class="wrap">
+    <b-container class="contentWrap">
       <transition name="fade" mode="out-in">
         <router-view/>
       </transition>
     </b-container>
+    <SiteFooter />
+    <!-- Scroll To Top Button -->
     <transition name="slide-fade">
       <button v-b-tooltip.hover.left.ds900 title="Ir para o topo" class="scrollToTop" v-if="showButton" @click="scrollToTop">
         <BIconChevronDoubleUp class="topIcon"/>
@@ -24,10 +26,11 @@
     flex-direction: column;
   }
 
-  .wrap {
+  .contentWrap {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    min-height: 65vh;
   }
 
   .scrollToTop {
@@ -74,9 +77,13 @@
 </style>
 <script>
   import SiteHeader from "./components/SiteHeader";
+  import SiteFooter from "./components/SiteFooter";
   import universityService from "./services/universityService";
   export default {
-    components: {SiteHeader},
+    components: {
+      SiteHeader,
+      SiteFooter
+    },
     data: () => ({
       showButton: false
     }),
