@@ -15,104 +15,108 @@
                     SIGA Brasil
                 </a>
             </caption>
-            <tr>
-                <th>
-                    Código
-                </th>
-                <th>
-                    Descrição
-                </th>
-                <th class="text-right">
-                    Pago
-                </th>
-                <th class="text-right">
-                    RP Pago
-                </th>
-            </tr>
-            <tr v-for="acao in acoesFinal.financeira.acoes">
-                <td class="font-weight-bold">
-                    {{acao.Codigo}}
-                </td>
-                <td>
-                    {{acao.Nome}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(acao.TotalPago)}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(acao.TotalRP_Pago)}}
-                </td>
-            </tr>
-            <tr>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold">
-                    Despesa Financeira
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.financeira.totalPago)}}
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.financeira.totalRP_Pago)}}
-                </td>
-            </tr>
-            <tr v-for="acao in acoesFinal.primariaObrigatoria.acoes">
-                <td class="font-weight-bold">
-                    {{acao.Codigo}}
-                </td>
-                <td>
-                    {{acao.Nome}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(acao.TotalPago)}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(acao.TotalRP_Pago)}}
-                </td>
-            </tr>
-            <tr>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold">
-                    Despesa Primária Obrigatória
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.primariaObrigatoria.totalPago)}}
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.primariaObrigatoria.totalRP_Pago)}}
-                </td>
-            </tr>
-            <tr v-for="acao in acoesFinal.primariaDiscricionaria.acoes">
-                <td class="font-weight-bold">
-                    {{acao.Codigo}}
-                </td>
-                <td>
-                    {{acao.Nome}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(acao.TotalPago)}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(acao.TotalRP_Pago)}}
-                </td>
-            </tr>
-            <tr>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold">
-                    Despesa Primária Obrigatória
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.primariaDiscricionaria.totalPago)}}
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.primariaDiscricionaria.totalRP_Pago)}}
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>
+                        Código
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th class="text-right">
+                        Pago
+                    </th>
+                    <th class="text-right">
+                        RP Pago
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="acao in acoesFinal.financeira.acoes">
+                    <td class="font-weight-bold">
+                        {{acao.Codigo}}
+                    </td>
+                    <td>
+                        {{acao.Nome}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(acao.TotalPago)}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(acao.TotalRP_Pago)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        Despesa Financeira
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.financeira.totalPago)}}
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.financeira.totalRP_Pago)}}
+                    </td>
+                </tr>
+                <tr v-for="acao in acoesFinal.primariaObrigatoria.acoes">
+                    <td class="font-weight-bold">
+                        {{acao.Codigo}}
+                    </td>
+                    <td>
+                        {{acao.Nome}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(acao.TotalPago)}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(acao.TotalRP_Pago)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        Despesa Primária Obrigatória
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.primariaObrigatoria.totalPago)}}
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.primariaObrigatoria.totalRP_Pago)}}
+                    </td>
+                </tr>
+                <tr v-for="acao in acoesFinal.primariaDiscricionaria.acoes">
+                    <td class="font-weight-bold">
+                        {{acao.Codigo}}
+                    </td>
+                    <td>
+                        {{acao.Nome}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(acao.TotalPago)}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(acao.TotalRP_Pago)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        Despesa Primária Obrigatória
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.primariaDiscricionaria.totalPago)}}
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.primariaDiscricionaria.totalRP_Pago)}}
+                    </td>
+                </tr>
+            </tbody>
         </table>
         <table>
             <caption>
@@ -126,35 +130,39 @@
                     SIGA Brasil
                 </a>
             </caption>
-            <tr>
-                <th>Despesa</th>
-                <th class="text-right">Pago</th>
-                <th class="text-right">RP Pago</th>
-            </tr>
-            <tr>
-                <td>Financeira</td>
-                <td class="text-right">{{formatCurrency(acoesFinal.financeira.totalPago)}}</td>
-                <td class="text-right">{{formatCurrency(acoesFinal.financeira.totalRP_Pago)}}</td>
-            </tr>
-            <tr>
-                <td>Primária Obrigatória</td>
-                <td class="text-right">{{formatCurrency(acoesFinal.primariaObrigatoria.totalPago)}}</td>
-                <td class="text-right">{{formatCurrency(acoesFinal.primariaObrigatoria.totalRP_Pago)}}</td>
-            </tr>
-            <tr>
-                <td>Primária Discricionária</td>
-                <td class="text-right">{{formatCurrency(acoesFinal.primariaDiscricionaria.totalPago)}}</td>
-                <td class="text-right">{{formatCurrency(acoesFinal.primariaDiscricionaria.totalRP_Pago)}}</td>
-            </tr>
-            <tr>
-                <td class="totalTD font-weight-bold">TOTAL</td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.financeira.totalPago + acoesFinal.primariaObrigatoria.totalPago + acoesFinal.primariaDiscricionaria.totalPago)}}
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(acoesFinal.financeira.totalRP_Pago + acoesFinal.primariaObrigatoria.totalRP_Pago + acoesFinal.primariaDiscricionaria.totalRP_Pago)}}
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Despesa</th>
+                    <th class="text-right">Pago</th>
+                    <th class="text-right">RP Pago</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Financeira</td>
+                    <td class="text-right">{{formatCurrency(acoesFinal.financeira.totalPago)}}</td>
+                    <td class="text-right">{{formatCurrency(acoesFinal.financeira.totalRP_Pago)}}</td>
+                </tr>
+                <tr>
+                    <td>Primária Obrigatória</td>
+                    <td class="text-right">{{formatCurrency(acoesFinal.primariaObrigatoria.totalPago)}}</td>
+                    <td class="text-right">{{formatCurrency(acoesFinal.primariaObrigatoria.totalRP_Pago)}}</td>
+                </tr>
+                <tr>
+                    <td>Primária Discricionária</td>
+                    <td class="text-right">{{formatCurrency(acoesFinal.primariaDiscricionaria.totalPago)}}</td>
+                    <td class="text-right">{{formatCurrency(acoesFinal.primariaDiscricionaria.totalRP_Pago)}}</td>
+                </tr>
+                <tr>
+                    <td class="totalTD font-weight-bold">TOTAL</td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.financeira.totalPago + acoesFinal.primariaObrigatoria.totalPago + acoesFinal.primariaDiscricionaria.totalPago)}}
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(acoesFinal.financeira.totalRP_Pago + acoesFinal.primariaObrigatoria.totalRP_Pago + acoesFinal.primariaDiscricionaria.totalRP_Pago)}}
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>

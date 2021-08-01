@@ -17,54 +17,57 @@
                     DATAUNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>
-                    Despesa
-                </th>
-                <th>
-                    Descrição
-                </th>
-                <th class="text-right">
-                    Valor Pago
-                </th>
-            </tr>
-            <template v-for="grupoDespesas in pagamentosUnirio">
-                <tr v-for="(despesa, index) in grupoDespesas.Rows" :key="despesa.Codigo">
-                    <td class="font-weight-bold">
-                        <span v-if="index == 0">{{despesa.CodigoSuperior}}</span>
-                    </td>
-                    <td>
-                        {{despesa.Rows[0].Despesa}}
-                    </td>
-                    <td class="text-right">
-                        {{formatCurrency(despesa.Total)}}
-                    </td>
+            <thead>
+                <tr>
+                    <th>
+                        Despesa
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th class="text-right">
+                        Valor Pago
+                    </th>
                 </tr>
+            </thead>
+            <tbody>
+                <template v-for="grupoDespesas in pagamentosUnirio">
+                    <tr v-for="(despesa, index) in grupoDespesas.Rows" :key="despesa.Codigo">
+                        <td class="font-weight-bold">
+                            <span v-if="index == 0">{{despesa.CodigoSuperior}}</span>
+                        </td>
+                        <td>
+                            {{despesa.Rows[0].Despesa}}
+                        </td>
+                        <td class="text-right">
+                            {{formatCurrency(despesa.Total)}}
+                        </td>
+                    </tr>
 
-                <tr :key="grupoDespesas.Codigo">
+                    <tr :key="grupoDespesas.Codigo">
+                        <td>
+
+                        </td>
+                        <td class="totalTD font-weight-bold">
+                            TOTAL
+                        </td>
+                        <td class="totalTD font-weight-bold text-right">
+                            {{formatCurrency(grupoDespesas.Total)}}
+                        </td>
+                    </tr>
+                </template>
+                <tr>
                     <td>
 
                     </td>
                     <td class="totalTD font-weight-bold">
-                        TOTAL
+                        TOTAL PAGO
                     </td>
                     <td class="totalTD font-weight-bold text-right">
-                        {{formatCurrency(grupoDespesas.Total)}}
+                        {{formatCurrency(totalUnirio)}}
                     </td>
                 </tr>
-            </template>
-
-            <tr>
-                <td>
-
-                </td>
-                <td class="totalTD font-weight-bold">
-                    TOTAL PAGO
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalUnirio)}}
-                </td>
-            </tr>
+            </tbody>
         </table>
         <p>Abaixo, o resumo dos pagamentos feitos pela UNIRIO de acordo com a categoria econômica e a natureza da despesa:</p>
         <table>
@@ -75,39 +78,43 @@
                     DATAUNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>
-                    Despesa
-                </th>
-                <th>
-                    Descrição
-                </th>
-                <th class="text-right">
-                    Valor Pago
-                </th>
-            </tr>
-            <tr v-for="grupo in groupedCodigoPrincipal" :key="grupo.CodigoPrincipal">
-                <td class="font-weight-bold">
-                    {{grupo.CodigoPrincipal}}
-                </td>
-                <td>
-                    {{grupo.Despesa}}
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(grupo.Total)}}
-                </td>
-            </tr>
-            <tr>
-                <td>
+            <thead>
+                <tr>
+                    <th>
+                        Despesa
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th class="text-right">
+                        Valor Pago
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="grupo in groupedCodigoPrincipal" :key="grupo.CodigoPrincipal">
+                    <td class="font-weight-bold">
+                        {{grupo.CodigoPrincipal}}
+                    </td>
+                    <td>
+                        {{grupo.Despesa}}
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(grupo.Total)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
 
-                </td>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalUnirio)}}
-                </td>
-            </tr>
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(totalUnirio)}}
+                    </td>
+                </tr>
+            </tbody>
         </table>
         <h4>Outras Unidades Gestoras</h4>
         <p>Abaixo, as despesas da UNIRIO que tiveram unidades gestoras diferentes de UNIRIO (UG 154034) e de HUGG (UG 154035):</p>
@@ -119,50 +126,54 @@
                     DATAUNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>
-                    Despesa
-                </th>
-                <th>
-                    Descrição
-                </th>
-                <th>
-                    Órgão superior da Unidade Gestora
-                </th>
-                <th class="text-right">
-                    Valor Pago
-                </th>
-            </tr>
-            <template v-for="despesa in rowsOtherUgs">
-                <tr v-for="row in despesa.Rows" :key="row.Codigo+row.UG">
-                    <td class="font-weight-bold">
-                        {{despesa.Codigo}}
+            <thead>
+                <tr>
+                    <th>
+                        Despesa
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th>
+                        Órgão superior da Unidade Gestora
+                    </th>
+                    <th class="text-right">
+                        Valor Pago
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template v-for="despesa in rowsOtherUgs">
+                    <tr v-for="row in despesa.Rows" :key="row.Codigo+row.UG">
+                        <td class="font-weight-bold">
+                            {{despesa.Codigo}}
+                        </td>
+                        <td>
+                            {{row.Despesa}}
+                        </td>
+                        <td>
+                            {{row['orgao_ug_desp']}}
+                        </td>
+                        <td class="text-right">
+                            {{formatCurrency(row.Valor)}}
+                        </td>
+                    </tr>
+                </template>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
                     </td>
                     <td>
-                        {{row.Despesa}}
+
                     </td>
-                    <td>
-                        {{row['orgao_ug_desp']}}
-                    </td>
-                    <td class="text-right">
-                        {{formatCurrency(row.Valor)}}
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(totalOtherUgs)}}
                     </td>
                 </tr>
-            </template>
-            <tr>
-                <td>
-
-                </td>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td>
-
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalOtherUgs)}}
-                </td>
-            </tr>
+            </tbody>
         </table>
         <p>Abaixo, o resumo dos pagamentos do exercício {{year}} da UNIRIO (UO 26269) feitos no ano de {{year}}.</p>
         <table>
@@ -173,38 +184,42 @@
                     DATAUNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>
-                    Unidades Gestoras
-                </th>
-                <th class="text-right">
-                    Valor Pago
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    UNIRIO e HUGG
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(totalUnirio)}}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Outras UGs
-                </td>
-                <td class="text-right">
-                    {{formatCurrency(totalOtherUgs)}}
-                </td>
-            </tr>
-            <tr>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalUnirio+totalOtherUgs)}}
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>
+                        Unidades Gestoras
+                    </th>
+                    <th class="text-right">
+                        Valor Pago
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        UNIRIO e HUGG
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(totalUnirio)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Outras UGs
+                    </td>
+                    <td class="text-right">
+                        {{formatCurrency(totalOtherUgs)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(totalUnirio+totalOtherUgs)}}
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>

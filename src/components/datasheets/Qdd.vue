@@ -9,6 +9,7 @@
                     DORC – UNIRIO
                 </a>
             </caption>
+            <thead>
             <tr>
                 <th>
                     Despesa
@@ -20,6 +21,8 @@
                     Valor Planejado
                 </th>
             </tr>
+            </thead>
+            <tbody>
             <template v-for="grupoDespesas in groupedThirdCode">
                 <template v-for="(despesa, index2) in grupoDespesas.Rows">
                     <tr v-for="(row, index) in despesa.Rows" :key="row.CodigoSuperior">
@@ -57,6 +60,7 @@
                     {{formatCurrency(totalQDD)}}
                 </td>
             </tr>
+            </tbody>
         </table>
         <p>Abaixo, o resumo do <b>QDD</b> de acordo com a categoria econômica e a natureza da despesa:</p>
         <table>
@@ -67,27 +71,31 @@
                     DORC – UNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>Despesa</th>
-                <th>Descrição</th>
-                <th>Valor Pago</th>
-            </tr>
-            <tr v-for="grupoDespesa in groupedCodigoPrincipal" :key="grupoDespesa.CodigoPrincipal">
-                <td>{{grupoDespesa.CodigoPrincipal}}</td>
-                <td>{{grupoDespesa.Despesa}}</td>
-                <td>{{formatCurrency(grupoDespesa.Total)}}</td>
-            </tr>
-            <tr>
-                <td>
+            <thead>
+                <tr>
+                    <th>Despesa</th>
+                    <th>Descrição</th>
+                    <th class="text-right">Valor Pago</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="grupoDespesa in groupedCodigoPrincipal" :key="grupoDespesa.CodigoPrincipal">
+                    <td>{{grupoDespesa.CodigoPrincipal}}</td>
+                    <td>{{grupoDespesa.Despesa}}</td>
+                    <td class="text-right">{{formatCurrency(grupoDespesa.Total)}}</td>
+                </tr>
+                <tr>
+                    <td>
 
-                </td>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalQDD)}}
-                </td>
-            </tr>
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(totalQDD)}}
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>
@@ -155,20 +163,76 @@
 </script>
 
 <style lang="scss" scoped>
-    th, td {
-        border: 1px solid black;
-        padding: 0.35rem;
-        color: #4A4A4A;
-        font-size: 1rem;
+    table {
+        border-collapse: collapse;
+        background:white;
+        border-radius:6px;
+        overflow:hidden;
+        max-width:800px;
+        width:100%;
+        margin:0 auto;
+        box-shadow: 0 0 15px rgba(black, 40%);
 
-        &.totalTD {
-            color: #CF2E2E;
+        th, td {
+            padding: 0px 10px;
+            font-size: 1rem;
+        }
+
+        thead {
+            tr {
+                height: 60px;
+                background: #000000;
+                font-size: 16px;
+
+                th {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        tbody {
+            $oddTrColor: #ebebeb;
+            $evenTrColor: #e0e0e0;
+
+            tr {
+                height:48px;
+                border-bottom: 1px solid #E3F1D5;
+                transition: background-color 0.3s;
+
+                td {
+                    color: #4A4A4A;
+                }
+
+                td.totalTD {
+                    color: #CF2E2E;
+                }
+
+                &:last-child  {
+                    border: 0;
+                }
+
+                &:nth-child(odd) {
+                    background-color: $oddTrColor;
+
+                    &:hover {
+                        background-color: darken($oddTrColor, 10%);
+                    }
+                }
+
+                &:nth-child(even) {
+                    background-color: $evenTrColor;
+
+                    &:hover {
+                        background-color: darken($evenTrColor, 10%);
+                    }
+                }
+            }
         }
     }
 
     h3 {
-         margin: 30px 0px;
-     }
+        margin: 30px 0px;
+    }
 
     caption {
         caption-side: bottom;

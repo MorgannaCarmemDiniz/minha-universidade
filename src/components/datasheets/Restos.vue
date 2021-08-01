@@ -10,56 +10,60 @@
                     DATAUNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>
-                    Despesa
-                </th>
-                <th>
-                    Descrição
-                </th>
-                <th class="text-right">
-                    RP Pago
-                </th>
-            </tr>
-            <template v-for="grupoDespesas in groupedThirdCode">
-                <template v-for="(despesa, index2) in grupoDespesas.Rows">
-                    <tr>
-                        <td class="font-weight-bold">
-                            <span v-if="index2 == 0">
-                                {{despesa.CodigoSuperior}}
-                            </span>
-                        </td>
+            <thead>
+                <tr>
+                    <th>
+                        Despesa
+                    </th>
+                    <th>
+                        Descrição
+                    </th>
+                    <th class="text-right">
+                        RP Pago
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template v-for="grupoDespesas in groupedThirdCode">
+                    <template v-for="(despesa, index2) in grupoDespesas.Rows">
+                        <tr>
+                            <td class="font-weight-bold">
+                                <span v-if="index2 == 0">
+                                    {{despesa.CodigoSuperior}}
+                                </span>
+                            </td>
+                            <td>
+                                {{despesa.Rows[0].Despesa}}
+                            </td>
+                            <td class="text-right">
+                                {{formatCurrency(despesa.Total)}}
+                            </td>
+                        </tr>
+                    </template>
+                    <tr :key="grupoDespesas.Codigo">
                         <td>
-                            {{despesa.Rows[0].Despesa}}
+
                         </td>
-                        <td class="text-right">
-                            {{formatCurrency(despesa.Total)}}
+                        <td class="totalTD font-weight-bold">
+                            TOTAL
+                        </td>
+                        <td class="totalTD font-weight-bold text-right">
+                            {{formatCurrency(grupoDespesas.Total)}}
                         </td>
                     </tr>
                 </template>
-                <tr :key="grupoDespesas.Codigo">
+                <tr>
                     <td>
 
                     </td>
                     <td class="totalTD font-weight-bold">
-                        TOTAL
+                        TOTAL RP
                     </td>
                     <td class="totalTD font-weight-bold text-right">
-                        {{formatCurrency(grupoDespesas.Total)}}
+                        {{formatCurrency(totalRestos)}}
                     </td>
                 </tr>
-            </template>
-            <tr>
-                <td>
-
-                </td>
-                <td class="totalTD font-weight-bold">
-                    TOTAL RP
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalRestos)}}
-                </td>
-            </tr>
+            </tbody>
         </table>
         <p>Abaixo, o resumo dos <b>Restos a Pagar</b> pago de acordo com a categoria econômica e a natureza da despesa:</p>
         <table>
@@ -70,27 +74,31 @@
                     DATAUNIRIO
                 </a>
             </caption>
-            <tr>
-                <th>Despesa</th>
-                <th>Descrição</th>
-                <th>RP Pago</th>
-            </tr>
-            <tr v-for="grupoDespesa in groupedCodigoPrincipal" :key="grupoDespesa.CodigoPrincipal">
-                <td>{{grupoDespesa.CodigoPrincipal}}</td>
-                <td>{{grupoDespesa.Despesa}}</td>
-                <td class="text-right">{{formatCurrency(grupoDespesa.Total)}}</td>
-            </tr>
-            <tr>
-                <td>
+            <thead>
+                <tr>
+                    <th>Despesa</th>
+                    <th>Descrição</th>
+                    <th>RP Pago</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="grupoDespesa in groupedCodigoPrincipal" :key="grupoDespesa.CodigoPrincipal">
+                    <td>{{grupoDespesa.CodigoPrincipal}}</td>
+                    <td>{{grupoDespesa.Despesa}}</td>
+                    <td class="text-right">{{formatCurrency(grupoDespesa.Total)}}</td>
+                </tr>
+                <tr>
+                    <td>
 
-                </td>
-                <td class="totalTD font-weight-bold">
-                    TOTAL
-                </td>
-                <td class="totalTD font-weight-bold text-right">
-                    {{formatCurrency(totalRestos)}}
-                </td>
-            </tr>
+                    </td>
+                    <td class="totalTD font-weight-bold">
+                        TOTAL
+                    </td>
+                    <td class="totalTD font-weight-bold text-right">
+                        {{formatCurrency(totalRestos)}}
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>
