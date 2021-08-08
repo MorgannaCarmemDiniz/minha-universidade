@@ -1,0 +1,38 @@
+$font-default: 'Roboto', sans-serif;
+$font-family-base: $font-default;
+
+$border-radius: .4rem;
+$border-radius-lg: .6rem;
+$border-radius-sm: .2rem;
+
+$spacer: 1rem;
+
+$primary: #e0972b;
+$secondary: #7054bc;
+$info: #3569c2;
+$success: #5bac1e;
+$warning: #ed8b27;
+$danger: #b82920;
+
+//Main Color Palette
+$bright-blue: #007CC3;
+$dark-blue: #22436E;
+$yellow: #FA9F42;
+$bright-pink: #DA4167;
+$dark-pink: #D7263D;
+
+$neutral-lightest: #E0F0FF;
+$neutral-light: #88889c;
+$neutral-md: #37373e;
+$neutral-dark: #19171f;
+$neutral-darkest: #100f17;
+
+//$grid-breakpoints: (
+//	xs: 0,
+//	sm: 576px,
+//	md: 768px,
+//	lg: 992px,
+//	xl: 1366px
+//) !default;
+
+$grid-gutter-width: 16px;

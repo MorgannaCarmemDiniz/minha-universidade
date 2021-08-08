@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;600&display=swap');
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: $dark-blue;
+  transition: 0.3s;
+
+  &:hover {
+    color: $bright-blue;
+    text-decoration: none;
+  }
+}

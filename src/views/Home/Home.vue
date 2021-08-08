@@ -13,7 +13,7 @@
         </router-link>
       </div>
       <div class="homeImage">
-        <img src="../assets/university.png" alt="">
+        <img src="./assets/university.png" alt="">
       </div>
     </div>
   </div>

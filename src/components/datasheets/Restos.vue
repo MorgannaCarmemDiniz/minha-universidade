@@ -2,7 +2,7 @@
     <div v-if="loaded">
         <h3>{{university.shortName}} - Restos a Pagar {{year}}</h3>
         <p>A tabela mostra os valores que foram pagos em {{year}}, mas que pertencem aos orçamentos dos anos anteriores.</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -66,7 +66,7 @@
             </tbody>
         </table>
         <p>Abaixo, o resumo dos <b>Restos a Pagar</b> pago de acordo com a categoria econômica e a natureza da despesa:</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -168,23 +168,7 @@
 </script>
 
 <style lang="scss" scoped>
-    th, td {
-        border: 1px solid black;
-        padding: 0.35rem;
-        color: #4A4A4A;
-        font-size: 1rem;
-
-        &.totalTD {
-            color: #CF2E2E;
-        }
-    }
-
     h3 {
         margin: 30px 0px;
-    }
-
-    caption {
-        caption-side: bottom;
-        text-align: center;
     }
 </style>

@@ -9,7 +9,7 @@
         </p>
         <p>A tabela abaixo apresenta os pagamentos da unidade orçamentária UNIRIO (UO 26269) executados pelas
             unidades gestoras UNIRIO (UG 154034) e HUGG (UG 154035) e pagos no ano de {{year}}.</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -70,7 +70,7 @@
             </tbody>
         </table>
         <p>Abaixo, o resumo dos pagamentos feitos pela UNIRIO de acordo com a categoria econômica e a natureza da despesa:</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -118,7 +118,7 @@
         </table>
         <h4>Outras Unidades Gestoras</h4>
         <p>Abaixo, as despesas da UNIRIO que tiveram unidades gestoras diferentes de UNIRIO (UG 154034) e de HUGG (UG 154035):</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -176,7 +176,7 @@
             </tbody>
         </table>
         <p>Abaixo, o resumo dos pagamentos do exercício {{year}} da UNIRIO (UO 26269) feitos no ano de {{year}}.</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -302,23 +302,7 @@
 </script>
 
 <style lang="scss" scoped>
-    th, td {
-        border: 1px solid black;
-        padding: 0.35rem;
-        color: #4A4A4A;
-        font-size: 1rem;
-
-        &.totalTD {
-            color: #CF2E2E;
-        }
-    }
-
     h3 {
         margin: 30px 0px;
-    }
-
-    caption {
-        caption-side: bottom;
-        text-align: center;
     }
 </style>

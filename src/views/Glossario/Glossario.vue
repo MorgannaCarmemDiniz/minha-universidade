@@ -40,7 +40,7 @@
                 </ul>
 
                 <figure>
-                    <img loading="lazy" width="800" height="275" src="../assets/leis.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img loading="lazy" width="800" height="275" src="./assets/leis.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <p>A principal fonte de receita do orçamento público é o <strong>tributo</strong>, que pode ser:</p>
@@ -75,7 +75,7 @@
                 </ul>
 
                 <figure>
-                    <img width="800" height="433" src="../assets/receitas.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="433" src="./assets/receitas.png" sizes="(max-width: 800px) 100vw, 800px">
                     <figcaption>Fonte: http://www.portaltransparencia.gov.br/receitas (disponível em 12/05/21)</figcaption>
                 </figure>
 
@@ -105,7 +105,7 @@
                 </ul>
 
                 <figure>
-                    <img width="800" height="652" src="../assets/despesas.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="652" src="./assets/despesas.png" sizes="(max-width: 800px) 100vw, 800px">
                     <figcaption>Fonte: http://www.portaltransparencia.gov.br/despesas (disponível em 12/05/21)</figcaption>
                 </figure>
 
@@ -135,7 +135,7 @@
                 <p>Para classificar a receita por natureza econômica usa-se oito dígitos.</p>
 
                 <figure>
-                    <img width="800" height="274" src="../assets/classificacaoReceitas.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="274" src="./assets/classificacaoReceitas.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <h3>Categorias Econômicas</h3>
@@ -160,7 +160,7 @@
                 <p>A tabela abaixo mostra a ligação entre categorias econômicas, origem e espécie.</p>
 
                 <figure>
-                    <img width="800" height="693" src="../assets/categoriaEconomica.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="693" src="./assets/categoriaEconomica.png" sizes="(max-width: 800px) 100vw, 800px">
                     <figcaption>Fonte: MTO 2022</figcaption>
                 </figure>
 
@@ -179,7 +179,7 @@
                 <h3>Exemplo</h3>
 
                 <figure>
-                    <img width="800" height="233" src="../assets/receitasExemplo.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="233" src="./assets/receitasExemplo.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <h3>Referências</h3>
@@ -267,7 +267,7 @@
                 <p>Essa classificação usa um código de cinco dígitos: os dois primeiros identificam o órgão orçamentário e os três últimos identificam a unidade orçamentária. A Lei Orçamentária Anual consigna recursos para o órgão orçamentário que pode repassá-los para unidades orçamentárias (normalmente responsáveis pela execução orçamentária). Órgão orçamentário é o agrupamento de UOs.</p>
 
                 <figure class="aligncenter size-large">
-                    <img width="400" height="142" src="../assets/classificacaoInstitucional.png" sizes="(max-width: 400px) 100vw, 400px">
+                    <img width="400" height="142" src="./assets/classificacaoInstitucional.png" sizes="(max-width: 400px) 100vw, 400px">
                 </figure>
 
                 <p>O primeiro dígito do Órgão Orçamentário evidencia o órgão.</p>
@@ -376,7 +376,7 @@
                 </ul>
 
                 <figure>
-                    <img width="280" height="142" src="../assets/classificacaoFuncional.png">
+                    <img width="280" height="142" src="./assets/classificacaoFuncional.png">
                 </figure>
 
                 <p>As funções e subfunções do Orçamento Público estão definidas na <a rel="noreferrer noopener" href="https://www.fnde.gov.br/index.php/acesso-a-informacao/institucional/legislacao/item/3474-portaria-mpog-n%C2%BA-42-de-14-de-abril-de-1999" target="_blank">Portaria MPOG nº 42, de 14 de abril de 1999</a>.</p>
@@ -545,21 +545,21 @@
                 </ul>
 
                 <figure>
-                    <img width="420" height="195" src="../assets/classificacaoProgramatica.png" sizes="(max-width: 420px) 100vw, 420px">
+                    <img width="420" height="195" src="./assets/classificacaoProgramatica.png" sizes="(max-width: 420px) 100vw, 420px">
                 </figure>
 
                 <p>Abaixo são apresentados alguns exemplos.</p>
 
                 <figure>
-                    <img width="800" height="274" src="../assets/classificacaoProgramaticaEx1.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="274" src="./assets/classificacaoProgramaticaEx1.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <figure>
-                    <img width="800" height="266" src="../assets/classificacaoProgramaticaEx3.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="266" src="./assets/classificacaoProgramaticaEx3.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <figure>
-                    <img width="800" height="262" src="../assets/classificacaoProgramaticaEx2.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="262" src="./assets/classificacaoProgramaticaEx2.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <h3>5.Classificação por Natureza da Despesa</h3>
@@ -573,7 +573,7 @@
                 <p>Portanto, a natureza da despesa é representada por  um código de oito dígitos.</p>
 
                 <figure>
-                    <img width="800" height="153" src="../assets/natureza.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="153" src="./assets/natureza.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <h4>Categoria Econômica</h4>
@@ -609,7 +609,7 @@
                 <p>O código 3.3.90.18.00 corresponde ao Auxílio Financeiro a Estudantes. É possível usar o subelemento para especificar o tipo de auxílio. Por exemplo, 3.3.90.18.01  é BOLSAS DE ESTUDO NO PAIS e 3.3.90.18.04 é AUXILIOS PARA DESENVOLVIMENTO DE ESTUDOS E PESQUISAS.</p>
 
                 <figure>
-                    <img width="800" height="267" src="../assets/despesa.png" sizes="(max-width: 800px) 100vw, 800px">
+                    <img width="800" height="267" src="./assets/despesa.png" sizes="(max-width: 800px) 100vw, 800px">
                 </figure>
 
                 <p>O Anexo III da <a href="https://www.fnde.gov.br/index.php/acesso-a-informacao/institucional/legislacao/item/3481-portaria-interministerial-n%C2%BA-163-de-04-de-maio-de-2001" data-type="URL" data-id="https://www.fnde.gov.br/index.php/acesso-a-informacao/institucional/legislacao/item/3481-portaria-interministerial-n%C2%BA-163-de-04-de-maio-de-2001" target="_blank" rel="noreferrer noopener">Portaria Interministerial nº 163</a> mostra a lista dos códigos e descrições das naturezas de despesas existentes no Orçamento Público.</p>

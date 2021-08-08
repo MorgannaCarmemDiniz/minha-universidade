@@ -3,7 +3,7 @@
         <h3>{{university.shortName}} - Ações Orçamentárias {{year}}</h3>
         <p>Uma despesa pode ser financeira, primária obrigatória ou primária discricionária.
             A tabela abaixo mostra as ações do orçamento {{year}} e os seus respectivos valores alocados divididos em <b>Pago</b> e <b>Restos a Pagar</b>.</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -118,7 +118,7 @@
                 </tr>
             </tbody>
         </table>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://repositorio.metodosquantitativos.com/tesouro/index.html"
@@ -239,23 +239,7 @@
 </script>
 
 <style lang="scss" scoped>
-    th, td {
-        border: 1px solid black;
-        padding: 0.35rem;
-        color: #4A4A4A;
-        font-size: 1rem;
-
-        &.totalTD {
-            color: #CF2E2E;
-        }
-    }
-
     h3 {
         margin: 30px 0px;
-    }
-
-    caption {
-        caption-side: bottom;
-        text-align: center;
     }
 </style>

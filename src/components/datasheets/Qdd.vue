@@ -1,7 +1,7 @@
 <template>
     <div v-if="loaded">
         <h3>{{university.shortName}} - Quadro de Detalhamento de Despesa {{year}}</h3>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://www.unirio.br/pro-reitorias-1/diretoriadeorcamento/orcamento"
@@ -63,7 +63,7 @@
             </tbody>
         </table>
         <p>Abaixo, o resumo do <b>QDD</b> de acordo com a categoria econômica e a natureza da despesa:</p>
-        <table>
+        <table class="styledTable">
             <caption>
                 Fonte dos dados:
                 <a href="http://www.unirio.br/pro-reitorias-1/diretoriadeorcamento/orcamento"
@@ -163,79 +163,7 @@
 </script>
 
 <style lang="scss" scoped>
-    table {
-        border-collapse: collapse;
-        background:white;
-        border-radius:6px;
-        overflow:hidden;
-        max-width:800px;
-        width:100%;
-        margin:0 auto;
-        box-shadow: 0 0 15px rgba(black, 40%);
-
-        th, td {
-            padding: 0px 10px;
-            font-size: 1rem;
-        }
-
-        thead {
-            tr {
-                height: 60px;
-                background: #000000;
-                font-size: 16px;
-
-                th {
-                    color: #FFFFFF;
-                }
-            }
-        }
-
-        tbody {
-            $oddTrColor: #ebebeb;
-            $evenTrColor: #e0e0e0;
-
-            tr {
-                height:48px;
-                border-bottom: 1px solid #E3F1D5;
-                transition: background-color 0.3s;
-
-                td {
-                    color: #4A4A4A;
-                }
-
-                td.totalTD {
-                    color: #CF2E2E;
-                }
-
-                &:last-child  {
-                    border: 0;
-                }
-
-                &:nth-child(odd) {
-                    background-color: $oddTrColor;
-
-                    &:hover {
-                        background-color: darken($oddTrColor, 10%);
-                    }
-                }
-
-                &:nth-child(even) {
-                    background-color: $evenTrColor;
-
-                    &:hover {
-                        background-color: darken($evenTrColor, 10%);
-                    }
-                }
-            }
-        }
-    }
-
     h3 {
         margin: 30px 0px;
-    }
-
-    caption {
-        caption-side: bottom;
-        text-align: center;
     }
 </style>

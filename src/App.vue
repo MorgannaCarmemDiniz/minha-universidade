@@ -18,9 +18,8 @@
 
 <style lang="scss">
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600&display=swap');
+
   #app {
-    font-family: Roboto, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -76,7 +75,7 @@
   }
 </style>
 <script>
-  import SiteHeader from "./components/SiteHeader";
+  import SiteHeader from "./components/SiteHeader2";
   import SiteFooter from "./components/SiteFooter";
   import universityService from "./services/universityService";
   export default {
