@@ -29,26 +29,24 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    min-height: 65vh;
+    min-height: 80vh;
   }
 
   .scrollToTop {
-    $bgColor: rgba(81, 81, 81, 0.61);
-
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     z-index: 100;
 
     border-radius: 50%;
     border: none;
     padding: 10px;
-    background-color: $bgColor;
-    transition: box-shadow 0.5s ease , background-color 0.5s ease;
+    background-color: $yellow;
+    transition: 0.5s ease;
 
     &:hover {
-      background-color: darken($bgColor, 30%);
-      box-shadow: 0px 0px 20px grey;
+      background-color: darken($yellow, 10%);
+      box-shadow: 0px 0px 20px rgba(black, 30%);
     }
   }
 
@@ -62,7 +60,7 @@
   }
 
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .1s;
+    transition: opacity 0.2s;
   }
   .fade-enter, .fade-leave-to {
     opacity: 0;
@@ -99,7 +97,7 @@
       },
       handleScroll() {
         let scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        let GOLDEN_RATIO = 0.01;
+        let GOLDEN_RATIO = 0.1;
 
         if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
           //show button

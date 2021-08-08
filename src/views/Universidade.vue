@@ -14,7 +14,7 @@
                     <h4>{{university.name}}</h4>
                 </div>
                 <div class="universityFooter">
-                    <a class="sidebarLink" target="_blank" href="http://www.unirio.br">
+                    <a class="sidebarLink" target="_blank" :href="university.url">
                         Visite o site
                         <font-awesome-icon class="faIcon" icon="external-link-alt" />
                     </a>

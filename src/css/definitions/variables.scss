@@ -7,13 +7,6 @@ $border-radius-sm: .2rem;
 
 $spacer: 1rem;
 
-$primary: #e0972b;
-$secondary: #7054bc;
-$info: #3569c2;
-$success: #5bac1e;
-$warning: #ed8b27;
-$danger: #b82920;
-
 //Main Color Palette
 $bright-blue: #007CC3;
 $dark-blue: #22436E;
@@ -21,6 +14,15 @@ $yellow: #FA9F42;
 $bright-pink: #DA4167;
 $dark-pink: #D7263D;
 
+//Context Colors
+$primary: $bright-blue;
+$secondary: #7054bc;
+$info: #3569c2;
+$success: #5bac1e;
+$warning: #ed8b27;
+$danger: #b82920;
+
+//Neutral Colors
 $neutral-lightest: #E0F0FF;
 $neutral-light: #88889c;
 $neutral-md: #37373e;

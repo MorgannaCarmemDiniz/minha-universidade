@@ -4,25 +4,29 @@
     </div>
     <div class="homeBanner">
       <div class="homeInfo">
-        <h3>Minha Universidade</h3>
-        <h4>
-          Relatórios financeiros de Universidades Públicas Federais brasileiras
-        </h4>
+        <h2>Minha Universidade</h2>
+        <h3>
+          Transparência nas Universidades Públicas Federais
+        </h3>
         <router-link to="/universidades">
           <b-button variant="primary">Universidades</b-button>
         </router-link>
       </div>
-      <div class="homeImage">
-        <img src="./assets/university.png" alt="">
+      <div class="homeIcon">
+        <HomeIcon />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import HomeIcon from "./HomeIcon.vue";
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    HomeIcon
+  }
 }
 </script>
 
@@ -36,7 +40,7 @@ export default {
   }
 
   .background {
-    background-color: hsl(178deg 22% 74%);
+    background-color: darken($dark-blue, 5%);
     width: 100%;
     height: 100%;
 
@@ -49,37 +53,42 @@ export default {
   .homeBanner {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    color: white;
 
     .homeInfo {
-      text-align: center;
-      flex: 0 0 50%;
+      text-align: left;
+      flex: 0 0 40%;
 
       > * {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 4em;
+        font-weight: 200;
+        text-shadow: 0 0 10px black;
       }
 
       h3 {
-        font-size: 2.5em;
-      }
-
-      h4 {
-        font-size: 1.4em;
+        font-weight: 200;
+        font-size: 2em;
+        text-shadow: 0 0 10px black;
       }
     }
 
-    .homeImage {
-      flex: 0 0 40%;
-      display: flex;
+    .homeIcon {
+      //flex: 0 0 40%;
+      //display: flex;
 
-      img {
-        object-fit: contain;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+      svg {
+        width: 350px;
+        height: auto;
+        filter: drop-shadow(0px 0px 5px rgba(black, 50%));
+        transition: 0.3s;
       }
     }
-
   }
 
 </style>

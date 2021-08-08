@@ -86,6 +86,9 @@
                 }
 
                 svg {
+                    width: 100px;
+                    height: auto;
+                    filter: drop-shadow(0px 0px 5px rgba(black, 50%));
                     transition: 0.3s;
                 }
 
@@ -93,11 +96,12 @@
                     text-decoration: none;
 
                     h1 {
-                        text-shadow: 0 0 10px rgba($yellow, 60%);
+                        text-shadow: 0 0 20px rgba($bright-blue, 60%);
                     }
 
                     svg {
-                        filter: drop-shadow(0px 0px 10px rgba($yellow, 20%));
+                        filter: drop-shadow(0px 0px 10px rgba($bright-blue, 20%));
+                        transform: scale(1.03, 1.03);
                     }
                 }
             }
@@ -107,28 +111,21 @@
     }
 
     .navBar {
-        $textColor: #e2e2e2;
-
         a {
             text-decoration: none !important;
-            color: $textColor;
+            color: white;
+            text-shadow: 0 0 10px black;
+            transition: 0.3s;
+            padding: 5px;
+
+            &:hover {
+                text-shadow: 0 0 20px rgba($bright-blue, 60%);
+            }
         }
 
         .nav {
             * + * {
                 margin-left: 10px;
-            }
-
-
-        }
-
-        .navItem {
-            padding: 5px;
-            border-radius: 5px;
-            transition: color 0.3s, background-color 0.3s;
-
-            &:hover {
-                color: darken($textColor, 10%);
             }
         }
     }
