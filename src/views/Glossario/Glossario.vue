@@ -3,7 +3,6 @@
         <b-col class="topics">
             <transition name="fade">
                 <div v-if="current == 1">
-
                     <h2>Orçamento Público</h2>
                     <p>Orçamento público é o instrumento utilizado pelo Governo Federal para estimar receitas e planejar
                         as despesas, onde</p>
@@ -917,6 +916,13 @@
 
                 </div>
             </transition>
+            <!-- Para criar uma página nova do glossário
+            <transition name="fade">
+                <div v-if="current == 4">
+                    <h2>Exemplo</h2>
+                </div>
+            </transition>
+            -->
         </b-col>
         <b-col sm="3">
             <vue-sticky-sidebar :topSpacing="30" class="sidebar" containerSelector=".containerGlossario"
@@ -925,6 +931,9 @@
                     <b-nav-item @click="switchContent(1)" :active="current == 1">Orçamento Público</b-nav-item>
                     <b-nav-item @click="switchContent(2)" :active="current == 2">Receitas</b-nav-item>
                     <b-nav-item @click="switchContent(3)" :active="current == 3">Despesas</b-nav-item>
+                    <!-- Para criar um novo item no menu
+                    <b-nav-item @click="switchContent(4)" :active="current == 4">Exemplo</b-nav-item>
+                    -->
                 </b-nav>
             </vue-sticky-sidebar>
         </b-col>

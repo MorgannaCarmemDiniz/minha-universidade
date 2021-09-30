@@ -3,7 +3,7 @@
         <div class="container footer">
             <div class="footerInfo d-flex">
                 <div>
-                    <Logo />
+                    <img src="./Logo-footer.svg" alt="" class="footerLogo">
                 </div>
                 <div>
                     <h5>
@@ -38,13 +38,20 @@
                 <h5>
                     Contato
                 </h5>
+                <p>
+
+                    <a href="mailto:morganna@uniriotec.br">
+                        <font-awesome-icon class="faIcon" icon="envelope" />
+                         morganna@uniriotec.br
+                    </a>
+                </p>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    import Logo from "./Logo";
+    import Logo from "../Logo";
     export default {
         name: "SiteFooter",
         components: {Logo},
@@ -78,28 +85,26 @@
                 height: 100px;
                 min-width: 20%;
                 flex-grow: 1;
-
             }
 
             .footerNav {
                 display: flex;
                 flex-direction: column;
-
-                .navItem {
-                    color: $neutral-light;
-
-                    &:hover {
-                        //color: $neutral-lightest;
-                        color: $bright-pink;
-                    }
-                }
             }
 
-            svg {
+            .footerLogo {
                 width: 130px;
                 height: auto;
                 filter: drop-shadow(0px 0px 5px rgba(black, 50%)) brightness(0.6);
                 transform: translateY(-20px);
+            }
+
+            a {
+                color: $neutral-light;
+
+                &:hover {
+                    color: $bright-pink;
+                }
             }
         }
     }
