@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home/Home.vue'
-import Glossario from "../views/Glossario/Glossario";
-import Universidade from "../views/Universidade";
-import Universidades from "../views/Universidades";
-import ViewDataSheet from "../views/ViewDataSheet";
+import Glossario from "../views/Glossario/Glossario.vue";
+import Universidade from "../views/Universidade/Universidade.vue";
+import Universidades from "../views/Universidades/Universidades.vue";
+import ViewDataSheet from "../views/ViewDataSheet.vue";
+import Creditos from "../views/Creditos/Creditos.vue";
 
 Vue.use(VueRouter);
 
@@ -33,12 +34,20 @@ const routes = [
     path: '/universidades',
     name: 'Universidades',
     component: Universidades
+  },
+  {
+    path: '/creditos',
+    name: 'Créditos',
+    component: Creditos
   }
 ]
 
 const router = new VueRouter({
   routes,
-  mode: "history"
+  mode: "history",
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0, behavior: 'smooth' };
+  }
 })
 
 export default router

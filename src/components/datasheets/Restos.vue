@@ -83,7 +83,7 @@
             </thead>
             <tbody>
                 <tr v-for="grupoDespesa in groupedCodigoPrincipal" :key="grupoDespesa.CodigoPrincipal">
-                    <td>{{grupoDespesa.CodigoPrincipal}}</td>
+                    <td class="font-weight-bold">{{grupoDespesa.CodigoPrincipal}}</td>
                     <td>{{grupoDespesa.Despesa}}</td>
                     <td class="text-right">{{formatCurrency(grupoDespesa.Total)}}</td>
                 </tr>

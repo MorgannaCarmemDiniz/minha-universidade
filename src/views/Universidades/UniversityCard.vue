@@ -33,7 +33,7 @@
         display: flex;
         align-items: center;
 
-        color: #414141;
+        color: $neutral-md;
 
         background-color: $bgColor;
         box-shadow: 0 0 10px rgba(black, 20%);

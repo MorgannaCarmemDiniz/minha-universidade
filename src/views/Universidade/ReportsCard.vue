@@ -42,7 +42,7 @@
         border-radius: 5px;
         padding: 15px;
 
-        color: #414141;
+        color: $neutral-md;
 
         background-color: $bgColor;
         box-shadow: 0 0 10px rgba(black, 20%);
@@ -54,11 +54,11 @@
         }
 
         .reportLink {
-            $color: #2659d6;
+            $color: $dark-blue;
             text-decoration: none;
             color: $color;
             transition: 0.3s;
-            border-left: 1px solid transparent;
+            border-left: 2px solid transparent;
 
             span {
                 transition: 0.3s;
@@ -66,10 +66,11 @@
             }
 
             &:hover {
+                border-left: 2px solid darken($yellow, 20%);
+
                 span {
                     transform: translateX(5px);
                 }
-                border-left: 1px solid darken($color, 20%);
             }
         }
 

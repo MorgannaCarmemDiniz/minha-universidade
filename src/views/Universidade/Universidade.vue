@@ -42,13 +42,16 @@
 </template>
 
 <script>
-    import universityService from "../services/universityService";
-    import UniversityCard from "../components/UniversityCard";
-    import ReportsCard from "../components/ReportsCard";
+    import universityService from "../../services/universityService";
+    import ReportsCard from "./ReportsCard";
+
+    function sortFunction(a, b) {
+        return parseInt(b) - parseInt(a)
+    }
 
     export default {
         name: "Universidade",
-        components: {ReportsCard, UniversityCard},
+        components: {ReportsCard},
         data: () => ({
             university: null,
             searchString: ''
@@ -58,7 +61,7 @@
                 if(!this.university) return [];
                 return this.getAvailableYears(this.university).filter(year => {
                     return year.includes(this.searchString);
-                })
+                }).sort(sortFunction);
             }
         },
         watch: {
@@ -122,7 +125,7 @@
         background-color: $bgColor;
         box-shadow: 0 0 10px rgba(black, 20%);
 
-        color: #414141;
+        color: $neutral-md;
 
         .universityImage {
             overflow: hidden;
@@ -180,7 +183,7 @@
             }
 
             .sidebarLink {
-                $bgColor: #19539c;
+                $bgColor: $dark-blue;
 
                 //align-self: flex-end;
                 display: block;

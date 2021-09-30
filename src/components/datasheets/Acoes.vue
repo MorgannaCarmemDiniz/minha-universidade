@@ -118,6 +118,9 @@
                 </tr>
             </tbody>
         </table>
+        <p>
+            A tabela abaixo apresenta o resumo das ações orçamentárias:
+        </p>
         <table class="styledTable">
             <caption>
                 Fonte dos dados:
@@ -139,17 +142,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Financeira</td>
+                    <td class="font-weight-bold">Financeira</td>
                     <td class="text-right">{{formatCurrency(acoesFinal.financeira.totalPago)}}</td>
                     <td class="text-right">{{formatCurrency(acoesFinal.financeira.totalRP_Pago)}}</td>
                 </tr>
                 <tr>
-                    <td>Primária Obrigatória</td>
+                    <td class="font-weight-bold">Primária Obrigatória</td>
                     <td class="text-right">{{formatCurrency(acoesFinal.primariaObrigatoria.totalPago)}}</td>
                     <td class="text-right">{{formatCurrency(acoesFinal.primariaObrigatoria.totalRP_Pago)}}</td>
                 </tr>
                 <tr>
-                    <td>Primária Discricionária</td>
+                    <td class="font-weight-bold">Primária Discricionária</td>
                     <td class="text-right">{{formatCurrency(acoesFinal.primariaDiscricionaria.totalPago)}}</td>
                     <td class="text-right">{{formatCurrency(acoesFinal.primariaDiscricionaria.totalRP_Pago)}}</td>
                 </tr>

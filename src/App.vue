@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    min-height: 80vh;
+    min-height: 75vh;
   }
 
   .scrollToTop {
@@ -73,7 +73,7 @@
   }
 </style>
 <script>
-  import SiteHeader from "./components/SiteHeader2";
+  import SiteHeader from "./components/SiteHeader";
   import SiteFooter from "./components/SiteFooter";
   import universityService from "./services/universityService";
   export default {
@@ -96,10 +96,7 @@
         });
       },
       handleScroll() {
-        let scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        let GOLDEN_RATIO = 0.1;
-
-        if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
+        if (document.documentElement.scrollTop > 200) {
           //show button
           this.showButton = true;
         } else {

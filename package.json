@@ -23,6 +23,7 @@
     "glob": "^7.1.6",
     "glob-promise": "^4.0.1",
     "vue": "^2.6.11",
+    "vue-animate-onscroll": "^1.0.8",
     "vue-chartjs": "^3.5.1",
     "vue-router": "^3.2.0",
     "vue-sticky-sidebar": "^1.0.5"

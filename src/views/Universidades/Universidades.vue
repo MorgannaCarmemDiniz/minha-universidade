@@ -15,8 +15,8 @@
 </template>
 
 <script>
-    import universityService from "../services/universityService";
-    import UniversityCard from "../components/UniversityCard";
+    import universityService from "../../services/universityService";
+    import UniversityCard from "./UniversityCard";
 
     export default {
         name: "Universidades",
