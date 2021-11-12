@@ -14,6 +14,13 @@ export const unirio = {
 
     getLogo: () => require('../assets/unirioLogo.png'),
     getImage: () => require('../assets/unirio.jpg'),
+    customRoutes: [
+        {
+            path: 'receita',
+            name: 'Receita',
+            component: async () => require('../../src/views/UNIRIO/Receita.vue').default,
+        }
+    ],
     url: 'http://www.unirio.br'
 };
 

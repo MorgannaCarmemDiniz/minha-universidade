@@ -6,6 +6,7 @@ import Universidade from "../views/Universidade/Universidade.vue";
 import Universidades from "../views/Universidades/Universidades.vue";
 import ViewDataSheet from "../views/ViewDataSheet.vue";
 import Creditos from "../views/Creditos/Creditos.vue";
+import universities from "../../spreadsheetParser/data/Universities.js";
 
 Vue.use(VueRouter);
 
@@ -41,6 +42,16 @@ const routes = [
     component: Creditos
   }
 ]
+
+for (let university of universities) {
+  for (let customRoute of university.customRoutes) {
+    routes.push({
+      path: `/universidade/${university.code}/${customRoute.path}`,
+      name: customRoute.name,
+      component: customRoute.component,
+    })
+  }
+}
 
 const router = new VueRouter({
   routes,

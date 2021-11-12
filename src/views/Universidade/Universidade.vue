@@ -14,6 +14,13 @@
                     <h4>{{university.name}}</h4>
                 </div>
                 <div class="universityFooter">
+                    <router-link
+                            v-for="route in university.customRoutes"
+                            :to="`/universidade/${university.code}/${route.path}`"
+                            class="sidebarLink"
+                    >
+                        {{route.name}}
+                    </router-link>
                     <a class="sidebarLink" target="_blank" :href="university.url">
                         Visite o site
                         <font-awesome-icon class="faIcon" icon="external-link-alt" />
@@ -204,6 +211,10 @@
                     background-color: lighten($bgColor, 5%);
                     box-shadow: 0 0 15px rgba($bgColor, 50%);
                 }
+            }
+
+            .sidebarLink +  .sidebarLink {
+                margin-top: 15px;
             }
 
             .universityFooter {
