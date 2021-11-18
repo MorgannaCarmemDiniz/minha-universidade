@@ -18,7 +18,7 @@ export const unirio = {
         {
             path: 'receita',
             name: 'Receita',
-            component: async () => require('../../src/views/UNIRIO/Receita.vue').default,
+            component: async () => require('../../src/views/UniversityViews/UNIRIO/Receita.vue').default,
         }
     ],
     url: 'http://www.unirio.br'
