@@ -1,11 +1,11 @@
 <template>
     <div class="footerWrapper">
         <div class="container footer">
-            <div class="footerInfo d-flex">
+            <div class="footerInfo footerInfoSobre d-flex">
                 <div>
                     <img src="./Logo-footer.svg" alt="" class="footerLogo">
                 </div>
-                <div>
+                <div class="footerSobre">
                     <h5>
                         Sobre o projeto
                     </h5>
@@ -60,9 +60,22 @@
 </script>
 
 <style lang="scss" scoped>
+    @media (max-width: 767.98px) {
+        .footerSobre {
+            display: none;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .footerInfoSobre {
+            display: none !important;
+        }
+    }
+
     .footerWrapper {
         margin-top: 2.5em;
         min-height: 150px;
+        height: fit-content;
         width: 100%;
         background-color: $neutral-darkest;
 
@@ -82,7 +95,7 @@
 
             .footerInfo {
                 align-items: flex-start;
-                height: 100px;
+                height: fit-content;
                 min-width: 20%;
                 flex-grow: 1;
             }

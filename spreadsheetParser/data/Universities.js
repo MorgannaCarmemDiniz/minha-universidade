@@ -18,7 +18,7 @@ export const unirio = {
         {
             path: 'crowdfunding',
             name: 'Crowdfunding',
-            component: async () => require('../../src/views/UniversityViews/UNIRIO/Crowdfunding.vue').default,
+            component: async () => require('../../src/views/UniversityViews/UNIRIO/Crowdfunding/Crowdfunding.vue').default,
         }
     ],
     url: 'http://www.unirio.br'
