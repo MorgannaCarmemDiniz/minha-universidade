@@ -82,7 +82,7 @@
                 require('./assets/UNIRIO_Crowdfunding_10.jpg')
             ],
             index: null,
-            valor: '8.465,00'
+            valor: '8.590,00'
         })
     }
 </script>
