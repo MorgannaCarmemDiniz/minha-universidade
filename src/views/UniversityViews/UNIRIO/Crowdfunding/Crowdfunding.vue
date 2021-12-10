@@ -1,67 +1,90 @@
 <template>
-        <div class="wrapper">
-            <div class="mainContent">
-                <h2>Crowdfunding</h2>
-                <h3>Volta às aulas com segurança</h3>
-                <p>
-                    A infraestrutura da Escola de Informática Aplicada (EIA) da UNIRIO está sem manutenção há pelo menos
-                    4 anos. Com a pandemia, a situação se agravou bastante. Temos ambientes que foram interditados por não
-                    ter condição de uso. Precisamos adequar o espaço para o retorno às aulas de forma segura, mas as
-                    Universidades Públicas estão sem dinheiro para fazer o básico. Esta campanha visa apenas comprar
-                    material de construção para a reforma das dependências da EIA e alguns equipamentos como cadeiras e
-                    lâmpadas de projetor. A mão de obra será de empresa terceirizada contratada pela UNIRIO.
-                </p>
-                <p>
-                    Para saber mais, baixe o PDF do projeto ou visite o site do crowdfunding no Kickante.
-                </p>
-                <div class="gallery">
-                    <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i">
-                    <vue-gallery-slideshow :images="images" :index="index" @close="index = null" />
-                </div>
+    <div class="wrapper">
+        <div class="mainContent">
+            <h2>Crowdfunding</h2>
+            <h3>Volta às aulas com segurança</h3>
+            <p>
+                A infraestrutura da Escola de Informática Aplicada (EIA) da UNIRIO está sem manutenção há pelo menos
+                4 anos. Com a pandemia, a situação se agravou bastante. Temos ambientes que foram interditados por não
+                ter condição de uso. Precisamos adequar o espaço para o retorno às aulas de forma segura, mas as
+                Universidades Públicas estão sem dinheiro para fazer o básico. Esta campanha visa apenas comprar
+                material de construção para a reforma das dependências da EIA e alguns equipamentos como cadeiras e
+                lâmpadas de projetor. A mão de obra será de empresa terceirizada contratada pela UNIRIO.
+            </p>
+            <p>
+                Para saber mais, baixe o PDF do projeto ou visite o site do crowdfunding no Kickante.
+            </p>
+            <div class="gallery">
+                <img class="image" v-for="(image, i) in images" :src="image" :key="i" @click="index = i">
+                <vue-gallery-slideshow :images="images" :index="index" @close="index = null"/>
             </div>
-            <div class="sidebar">
-                <div class="kickanteInfo">
-                    <p>
-                        <span class="span1">Valor Arrecadado</span>
-                        <br>
-                        <span class="span2">R${{valor}}</span>
-                        <br>
-                        <span class="span3">da meta de R$30.000,00</span>
-                    </p>
-                    <a class="sidebarLink" target="_blank" href="https://nova.kickante.com.br/crowdfunding/volta-as-aulas-com-seguranca">
-                        Contribuir
-                        <font-awesome-icon class="faIcon" icon="external-link-alt" />
-                    </a>
-                </div>
-                <a href="https://drive.google.com/uc?export=download&id=1bSuuwRL82NevA-onEBxdFhCyKSMh86x2" class="PDFDownload">
-                    <img class="PDFIcon" src="./assets/PDFIcon.png" alt="">
-                    <span>O Projeto</span>
-                    <img class="DownloadArrow" src="./assets/downloadArrow.png" alt="">
-                </a>
-            </div>
-            <div class="mobileSidebar">
-                <div class="mobileSidebarInfo">
-                    <span style="font-size: 0.8em">Valor Arrecadado:</span>
-                    <span style="font-size: 1.5em">R${{valor}}</span>
-                </div>
-                <div class="mobileSidebarLink">
-                    <!--<span style="font-size: 0.9em">Contribuir</span>-->
-                    <a target="_blank" href="https://nova.kickante.com.br/crowdfunding/volta-as-aulas-com-seguranca">
-                        <font-awesome-icon class="faIcon" icon="hand-holding-usd" />
-                    </a>
-                </div>
-                <div class="mobileSidebarPDF">
-                    <a href="https://drive.google.com/uc?export=download&id=1bSuuwRL82NevA-onEBxdFhCyKSMh86x2" class="PDFDownload">
-                        <img class="PDFIcon" src="./assets/PDFIcon.png" alt="">
-                    </a>
-                </div>
-
+            <div>
+                <h4>Contribuições</h4>
+                <table class="styledTable">
+                    <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="contribuicao in contribuicoes">
+                        <td>{{contribuicao.Nome}}</td>
+                        <td>{{contribuicao.Valor != 'Anônimo' ? 'R$ ' + contribuicao.Valor : contribuicao.Valor}}</td>
+                        <td>{{contribuicao.Data}}</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+        <div class="sidebar">
+            <div class="kickanteInfo">
+                <p>
+                    <span class="span1">Valor Arrecadado</span>
+                    <br>
+                    <span class="span2">R$ {{valor}}</span>
+                    <br>
+                    <span class="span3">da meta de R$30.000,00</span>
+                </p>
+                <a class="sidebarLink" target="_blank"
+                   href="https://nova.kickante.com.br/crowdfunding/volta-as-aulas-com-seguranca">
+                    Contribuir
+                    <font-awesome-icon class="faIcon" icon="external-link-alt"/>
+                </a>
+            </div>
+            <a href="https://drive.google.com/uc?export=download&id=1bSuuwRL82NevA-onEBxdFhCyKSMh86x2"
+               class="PDFDownload">
+                <img class="PDFIcon" src="./assets/PDFIcon.png" alt="">
+                <span>O Projeto</span>
+                <img class="DownloadArrow" src="./assets/downloadArrow.png" alt="">
+            </a>
+        </div>
+        <div class="mobileSidebar">
+            <div class="mobileSidebarInfo">
+                <span style="font-size: 0.8em">Valor Arrecadado:</span>
+                <span style="font-size: 1.5em">R$ {{valor}}</span>
+            </div>
+            <div class="mobileSidebarLink">
+                <!--<span style="font-size: 0.9em">Contribuir</span>-->
+                <a target="_blank" href="https://nova.kickante.com.br/crowdfunding/volta-as-aulas-com-seguranca">
+                    <font-awesome-icon class="faIcon" icon="hand-holding-usd"/>
+                </a>
+            </div>
+            <div class="mobileSidebarPDF">
+                <a href="https://drive.google.com/uc?export=download&id=1bSuuwRL82NevA-onEBxdFhCyKSMh86x2"
+                   class="PDFDownload">
+                    <img class="PDFIcon" src="./assets/PDFIcon.png" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
 </template>
 
 <script>
     import VueGallerySlideshow from 'vue-gallery-slideshow';
+    import Crowdfunding from './Crowdfunding.json';
 
     export default {
         name: "Crowdfunding",
@@ -82,7 +105,8 @@
                 require('./assets/UNIRIO_Crowdfunding_10.jpg')
             ],
             index: null,
-            valor: '8.590,00'
+            contribuicoes: Crowdfunding,
+            valor: '9.040,00'
         })
     }
 </script>
@@ -120,6 +144,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
+                margin-bottom: 20px;
 
                 .image {
                     width: 75px;
@@ -187,7 +212,7 @@
                     object-fit: contain;
                     margin-right: 5px;
                 }
-                
+
                 &:hover {
                     cursor: pointer;
                     background-color: #dcdcdc;
