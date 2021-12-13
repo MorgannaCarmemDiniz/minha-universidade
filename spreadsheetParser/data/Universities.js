@@ -14,13 +14,7 @@ export const unirio = {
 
     getLogo: () => require('../assets/unirioLogo.png'),
     getImage: () => require('../assets/unirio.jpg'),
-    customRoutes: [
-        {
-            path: 'crowdfunding',
-            name: 'Crowdfunding',
-            component: async () => require('../../src/views/UniversityViews/UNIRIO/Crowdfunding/Crowdfunding.vue').default,
-        }
-    ],
+    customRoutes: [],
     url: 'http://www.unirio.br'
 };
 
