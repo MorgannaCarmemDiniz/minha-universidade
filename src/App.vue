@@ -17,7 +17,11 @@
 </template>
 
 <style lang="scss">
-
+@media (max-width: 767.98px) {
+  .scrollToTop {
+    display: none;
+  }
+}
 
   #app {
     min-height: 100vh;

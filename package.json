@@ -25,6 +25,7 @@
     "vue": "^2.6.11",
     "vue-animate-onscroll": "^1.0.8",
     "vue-chartjs": "^3.5.1",
+    "vue-gallery-slideshow": "^1.5.2",
     "vue-router": "^3.2.0",
     "vue-sticky-sidebar": "^1.0.5"
   },

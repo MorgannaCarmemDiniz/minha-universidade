@@ -14,15 +14,17 @@ export const unirio = {
 
     getLogo: () => require('../assets/unirioLogo.png'),
     getImage: () => require('../assets/unirio.jpg'),
-    customRoutes: [
-        {
-            path: 'crowdfunding',
-            name: 'Crowdfunding',
-            component: async () => require('../../src/views/UniversityViews/UNIRIO/Crowdfunding.vue').default,
-        }
-    ],
+    customRoutes: [],
     url: 'http://www.unirio.br'
 };
+
+/* Exemplo do objeto que deve ser adicionado no array de CustomRoutes para criar uma página específica:
+{
+    path: 'crowdfunding',
+    name: 'Crowdfunding',
+    component: async () => require('../../src/views/UniversityViews/UNIRIO/Crowdfunding/Crowdfunding.vue').default,
+}
+ */
 
 const universities = [
     unirio
