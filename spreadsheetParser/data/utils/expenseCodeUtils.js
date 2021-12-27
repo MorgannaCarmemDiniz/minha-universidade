@@ -1,8 +1,12 @@
+//Esse arquivo define funções utilitárias que auxiliam na formatação dos códigos das despesas
+
+//Retornar um código com a formatação desejada
 export function getFormattedString(code) {
     let parts = getParts(code);
     return parts.join('.');
 }
 
+//Retornar um array com as 4 partes do código da despesa
 export function getParts(code) {
     if (code instanceof Array) {
         return code;
@@ -22,6 +26,9 @@ export function getParts(code) {
     ]
 }
 
+//Retornar a string que representa o código "superior" desejado
+//Por exemplo, o código superior ao código 33.90.14.14 é o 33.90.14.00, já o código superior do 33.90.14.00 é o 33.90.00.00
+//Essa função é utilizada apenas para auxiliar a função getTopCode definida abaixo
 export function getUpperCode(code) {
     let parts = getParts(code);
     let i;
@@ -35,6 +42,8 @@ export function getUpperCode(code) {
     return getFormattedString(parts);
 }
 
+//Retorna o código "principal" de uma despesa
+//Por exemplo, o código principal do código 33.90.14.14 é o 33.00.00.00
 export function getTopCode(code) {
     do {
         code = getUpperCode(code);
@@ -42,6 +51,9 @@ export function getTopCode(code) {
     return code;
 }
 
+//Retorna o código no seu "terceiro nível"
+//Por exemplo, o código de terceiro nível da despesa 33.90.14.14 é 33.90.14.00
+//O código de terceiro nível da despesa 33.90.14.00 é ele mesmo.
 export function getThirdCode(code) {
     let parts = getParts(code);
     parts[3] = '00';

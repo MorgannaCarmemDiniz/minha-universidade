@@ -1,11 +1,17 @@
+//Importar funções de utilidades relacionadas ao código das despesas
+import {getFormattedString, getThirdCode, getTopCode} from "../utils/expenseCodeUtils";
+//Importar funções de utilidades gerais
 import {filterUnique, sumByProperty} from "../utils/util";
-import {getFormattedString, getThirdCode, getTopCode, getUpperCode} from "../utils/expenseCodeUtils";
 
+//Exportando a função que faz o mapeamento das tabelas de Restos a Pagar pra arquivo JSON
+//Recebe as linhas da tabela como parâmetro
 export default function RestosMapper(rows) {
+    //Formatando e transformando os valores numéricos
     rows.forEach(row => {
         row.Valor = parseFloat((row.Valor.replace(/[^0-9,]/gi, '').replace(',', '.')))
     });
 
+    //Retornando o array com os dados na estrutura esperada
     return rows
         .map(row => row.Codigo)
         .filter(filterUnique)

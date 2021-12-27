@@ -1,3 +1,6 @@
+//Lista das ações orçamentárias encontradas nas tabelas.
+//Caso uma ação orçamentária não-identificada apareça, é preciso que ela seja definida aqui.
+
 const acoesOrcamentarias = [
     {
         codigo: '09HB',

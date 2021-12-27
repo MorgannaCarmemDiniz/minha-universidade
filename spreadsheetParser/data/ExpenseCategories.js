@@ -1,3 +1,5 @@
+//Lista das categorias de despesa para obter a descrição com base no código
+
 const expenseCategories = {
     categoria: {},
     natureza: {
