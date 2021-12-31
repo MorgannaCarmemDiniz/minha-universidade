@@ -26,6 +26,7 @@
             searchString: ''
         }),
         computed: {
+            //Função que filtra as universidades de acordo com a barra de busca
             filteredUniversities() {
                 return this.universities.filter(university => {
                     let regex = new RegExp('' + this.searchString, 'i');
@@ -34,16 +35,8 @@
             }
         },
         async mounted() {
+            //Pegar a lista de universidades cadastradas
             this.universities = await universityService.getList();
-        },
-        methods: {
-            getAvailableYears(university) {
-                return university.datasheets.map(ds => ds.year).filter((y, i, a) => a.indexOf(y) === i);
-            },
-
-            getAvailableSheets(university, year) {
-                return university.datasheets.filter(ds => ds.year === year);
-            }
         }
     }
 </script>

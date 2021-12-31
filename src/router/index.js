@@ -1,3 +1,4 @@
+//Arquivo de definição das rotas
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home/Home.vue'
@@ -10,6 +11,7 @@ import universities from "../../spreadsheetParser/data/Universities.js";
 
 Vue.use(VueRouter);
 
+//Lista de rotas criadas manualmente
 const routes = [
   {
     path: '/',
@@ -41,8 +43,10 @@ const routes = [
     name: 'Créditos',
     component: Creditos
   }
-]
+];
 
+//Loop que cria as rotas relativas as páginas exclusivas de cada universidade automaticamente com base na propriedade
+//customRoutes de cada universidade
 for (let university of universities) {
   for (let customRoute of university.customRoutes) {
     routes.push({

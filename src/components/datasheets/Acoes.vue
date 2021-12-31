@@ -171,10 +171,11 @@
 </template>
 
 <script>
-
+    //Importar a lista que detalha as ações orçamentárias registradas
     import acoesOrcamentarias from "../../../spreadsheetParser/data/acoesOrcamentarias";
     import {sumByProperty} from "../../../spreadsheetParser/data/utils/util";
 
+    //Utilitário pra formatação numérica utilizado no método formatCurrency
     const numberFormatter = new Intl.NumberFormat('pt-BR', {
         minimumFractionDigits: 2
     });
@@ -205,7 +206,7 @@
             }
         },
         mounted() {
-            //1ª tabela
+            //Tranformações para estruturar os dados da maneira desejada
             let acoesFinal = this.dataSheetData
                 .filter(row => row.TotalPago || row.TotalRP_Pago)
                 .map(row => ({
@@ -217,6 +218,7 @@
                     TotalRP_Pago: row.TotalRP_Pago
                 }));
 
+            //Separar pelos tipos de ação orçamentária
             acoesFinal = {
                 financeira: {
                     acoes: acoesFinal.filter(acao => acao.Tipo == 'financeira'),

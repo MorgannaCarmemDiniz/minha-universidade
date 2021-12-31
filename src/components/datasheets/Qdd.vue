@@ -104,6 +104,7 @@
     import {sumByProperty} from "../../../spreadsheetParser/data/utils/util";
     import expenseCategories from "../../../spreadsheetParser/data/ExpenseCategories";
 
+    //Utilitário pra formatação numérica utilizado no método formatCurrency
     const numberFormatter = new Intl.NumberFormat('pt-BR', {
         minimumFractionDigits: 2
     });
@@ -136,7 +137,8 @@
             }
         },
         mounted() {
-            //1ª tabela
+            //Transformações para estruturar os dados da maneira que a 1ª tabela deseja (agrupar o código pelo seu nível
+            //"superior")
             this.groupedThirdCode = this.dataSheetData
                 .map(row => row.CodigoSuperior)
                 .filter((codigo, index, arr) => index === arr.indexOf(codigo))  // de-dupe
@@ -146,7 +148,8 @@
                     Total: this.dataSheetData.filter(row => row.CodigoSuperior === CodigoAgrupado).reduce(sumByProperty('Total'), 0)
                 }));
 
-            //2ª tabela
+            //Transformações para estruturar os dados da maneira que a 2ª tabela deseja (agrupar o código pelo primeiro
+            //"nível")
             this.groupedCodigoPrincipal = this.dataSheetData
                 .map(row => row.CodigoPrincipal)
                 .filter((codigo, index, arr) => index === arr.indexOf(codigo)) // de-dupe
@@ -156,6 +159,7 @@
                     Despesa: expenseCategories.natureza[CodigoPrincipal[1]]
                 }))
 
+            //Calcular o valor total de todas essas despesas
             this.totalQDD = this.groupedThirdCode.reduce(sumByProperty('Total'), 0);
             this.loaded = true;
         }

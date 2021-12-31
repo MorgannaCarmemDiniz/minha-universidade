@@ -52,6 +52,7 @@
     import universityService from "../../services/universityService";
     import ReportsCard from "./ReportsCard";
 
+    //Função utilitária de sort
     function sortFunction(a, b) {
         return parseInt(b) - parseInt(a)
     }
@@ -64,6 +65,7 @@
             searchString: ''
         }),
         computed: {
+            //Função que filtra os anos de acordo com a barra de busca
             filteredYears() {
                 if(!this.university) return [];
                 return this.getAvailableYears(this.university).filter(year => {
@@ -83,14 +85,15 @@
             this.load();
         },
         methods: {
+            //Obter a universidade pelo código recebido na rota
             async load() {
                 this.university = await universityService.getByCode(this.$route.params.university);
             },
-
+            //Retornar os anos que contém relatórios dessa universidade
             getAvailableYears(university) {
                 if (this.university) return university.datasheets.map(ds => ds.year).filter((y, i, a) => a.indexOf(y) === i);
             },
-
+            //Retornar a lista com os relatórios disponíveis dessa universidade em certo ano
             getAvailableSheets(university, year) {
                 if (this.university) return university.datasheets.filter(ds => ds.year === year);
             }

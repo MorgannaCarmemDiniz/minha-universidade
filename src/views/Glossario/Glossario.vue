@@ -941,6 +941,7 @@
 </template>
 
 <script>
+    //Importar o componente da biblioteca responsável por deixar a sidebar "sticky" durante a rolagem da página
     import vueStickySidebar from "vue-sticky-sidebar";
 
     export default {

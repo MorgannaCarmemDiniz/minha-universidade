@@ -16,12 +16,48 @@
   </div>
 </template>
 
-<style lang="scss">
-@media (max-width: 767.98px) {
-  .scrollToTop {
-    display: none;
+<script>
+  import SiteHeader from "./components/SiteHeader";
+  import SiteFooter from "./components/Footer/SiteFooter";
+
+  export default {
+    components: {
+      SiteHeader,
+      SiteFooter
+    },
+    data: () => ({
+      showButton: false
+    }),
+    mounted() {
+      document.addEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      //Métodos relacionados ao botão de scroll to top
+      scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      },
+      handleScroll() {
+        if (document.documentElement.scrollTop > 200) {
+          //show button
+          this.showButton = true;
+        } else {
+          //hide button
+          this.showButton = false;
+        }
+      }
+    }
   }
-}
+</script>
+
+<style lang="scss">
+  @media (max-width: 767.98px) {
+    .scrollToTop {
+      display: none;
+    }
+  }
 
   #app {
     min-height: 100vh;
@@ -76,38 +112,3 @@
     color: white;
   }
 </style>
-<script>
-  import SiteHeader from "./components/SiteHeader";
-  import SiteFooter from "./components/Footer/SiteFooter";
-  import universityService from "./services/universityService";
-  export default {
-    components: {
-      SiteHeader,
-      SiteFooter
-    },
-    data: () => ({
-      showButton: false
-    }),
-    mounted() {
-      universityService.getList();
-      document.addEventListener('scroll', this.handleScroll);
-    },
-    methods: {
-      scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      },
-      handleScroll() {
-        if (document.documentElement.scrollTop > 200) {
-          //show button
-          this.showButton = true;
-        } else {
-          //hide button
-          this.showButton = false;
-        }
-      }
-    }
-  }
-</script>

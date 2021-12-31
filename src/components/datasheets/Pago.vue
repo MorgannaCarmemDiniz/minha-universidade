@@ -230,6 +230,7 @@
     import {AgruparPago} from "../../../spreadsheetParser/data/mappers/Pago";
     import expenseCategories from "../../../spreadsheetParser/data/ExpenseCategories";
 
+    //Utilitário pra formatação numérica utilizado no método formatCurrency
     const numberFormatter = new Intl.NumberFormat('pt-BR', {
         minimumFractionDigits: 2
     });
@@ -259,13 +260,17 @@
             groupedCodigoPrincipal: null
         }),
         mounted() {
-            //1ª tabela
+            //Transformações para estruturar os dados da maneira que a 1ª tabela deseja.
+            //Função pra filtrar as despesas que sejam apenas da UO da UNIRIO e com UG ou da UNIRIO ou da HUGG
             let filterFromUnirio = (row) => (row.UO === unirio.UOs.UNIRIO) &&
                 (row.UG === unirio.UGs.UNIRIO || row.UG === unirio.UGs.HUGG);
 
+            //Pegar apenas as linhas de acordo com o filtro da UO da UNIRIO
             let rowsUnirio = AgruparPago(this.dataSheetData.filter(filterFromUnirio).filter(row => row.Valor));
+            //Calcular o valor total de todas essas despesas
             this.totalUnirio = rowsUnirio.reduce(sumByProperty('Total'), 0);
 
+            //Estruturar os dados da maneira desejada
             this.pagamentosUnirio = rowsUnirio
                 .map(row => row.CodigoSuperior)
                 .filter((codigo, index, arr) => index === arr.indexOf(codigo))  // de-dupe
@@ -275,7 +280,9 @@
                     Total: rowsUnirio.filter(row => row.CodigoSuperior === CodigoAgrupado).reduce(sumByProperty('Total'), 0)
                 }));
 
-            //2ª tabela
+            //Transformações para estruturar os dados da maneira que a 2ª tabela deseja (resumo agrupado por categoria
+            //econômica)
+            //Estruturar os dados da maneira desejada
             this.groupedCodigoPrincipal = rowsUnirio
                 .map(row => row.CodigoPrincipal)
                 .filter((codigo, index, arr) => index === arr.indexOf(codigo)) // de-dupe
@@ -285,10 +292,14 @@
                     Despesa: expenseCategories.natureza[CodigoPrincipal[1]]
                 }));
 
-            //3ª tabela
+            //Transformações para estruturar os dados da maneira que a 3ª tabela deseja (despesas de UGs que não sejam
+            //a UNIRIO nem a HUGG)
+            //Função pra filtrar as despesas que sejam apenas com UGs diferentes de UNIRIO e HUGG
             let filterOtherUgs = (row) => (row.UG !== unirio.UGs.UNIRIO) && (row.UG !== unirio.UGs.HUGG);
 
+            ////Pegar apenas as linhas de acordo com o filtro das UGs diferentes
             this.rowsOtherUgs = AgruparPago(this.dataSheetData.filter(filterOtherUgs).filter(row => row.Valor));
+            //Calcular o valor total de todas essas despesas
             this.totalOtherUgs = this.rowsOtherUgs.reduce(sumByProperty('Total'), 0);
 
             this.loaded = true;

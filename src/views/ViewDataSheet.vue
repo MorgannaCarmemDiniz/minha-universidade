@@ -38,12 +38,14 @@
                 this.viewComponent = null;
                 this.dataSheetData = null;
 
+                //Pegar a universidade desejada pelo código enviado na rota
                 this.university = await universityService.getByCode(this.$route.params.university);
-
+                //Pegar o relatório desejado pelo código enviado na rota
                 this.dataSheet = this.university.datasheets.find(
                     ds => ds.year == this.$route.params.year && ds.type.code === this.$route.params.sheet
                 );
-
+                //Caso o relatório exista, pegar o componente responsável pela sua exibição (QDD.vue, Pago.vue, etc)
+                //e carregar os dados do relatório
                 if (this.dataSheet) {
                     this.viewComponent = getDataSheetComponent(this.dataSheet.type.code);
                     this.dataSheetData = await this.dataSheet.load();
