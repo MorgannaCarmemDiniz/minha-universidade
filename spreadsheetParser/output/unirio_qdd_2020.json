@@ -1,1 +1,630 @@
-[{"Codigo":"33.50.41.00","CodigoSuperior":"33.50.41.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.50.41.00","Despesa":"Entidades Nacionais: ABEC, CBBU, OCLC, ANDIFES, CRUB, ABEM, ANPED","Valor":82255}],"Total":82255},{"Codigo":"33.80.41.00","CodigoSuperior":"33.80.41.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.80.41.00","Despesa":"Organismos Internacionais: Grupo Tordesilhas e OCLC","Valor":14499}],"Total":14499},{"Codigo":"33.90.00.00","CodigoSuperior":"33.90.00.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.00.00","Despesa":"Escola de Música - Prática de Montagem","Valor":15000},{"Codigo":"33.90.00.00","Despesa":"Cursos de Extensão e Cultura","Valor":50000},{"Codigo":"33.90.00.00","Despesa":"Projetos e Programas de Extensão e Cultura","Valor":20000},{"Codigo":"33.90.00.00","Despesa":"Idiomas sem Fronteiras","Valor":11000}],"Total":96000},{"Codigo":"33.90.14.00","CodigoSuperior":"33.90.14.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.14.00","Despesa":"Diárias pessoal civil","Valor":5000}],"Total":5000},{"Codigo":"33.90.14.14","CodigoSuperior":"33.90.14.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.14.14","Despesa":"Diária de Pessoal Civil","Valor":120000}],"Total":120000},{"Codigo":"33.90.18.00","CodigoSuperior":"33.90.18.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.18.00","Despesa":"Monitoria","Valor":1840000},{"Codigo":"33.90.18.00","Despesa":"PET - UNIRIO","Valor":96000},{"Codigo":"33.90.18.00","Despesa":"PROTES Tutoria Especial para Graduação","Valor":132000},{"Codigo":"33.90.18.00","Despesa":"PRADIG","Valor":220000},{"Codigo":"33.90.18.00","Despesa":"Iniciação Científica","Valor":1492800},{"Codigo":"33.90.18.00","Despesa":"PIBEX Programa Institucional de Bolsas de Extensão","Valor":880000},{"Codigo":"33.90.18.00","Despesa":"PIBCUL Programa Institucional de Bolsas de Cultura","Valor":160000},{"Codigo":"33.90.18.00","Despesa":"EAD - Programa Território e Trabalho","Valor":168000},{"Codigo":"33.90.18.00","Despesa":"MARCA Mobilidade Acadêmica","Valor":48000},{"Codigo":"33.90.18.00","Despesa":"BRACOL","Valor":24000},{"Codigo":"33.90.18.00","Despesa":"BRAMEX","Valor":24000},{"Codigo":"33.90.18.00","Despesa":"PNAES - Bolsa Incentivo Acadêmico (BIA)","Valor":2460000},{"Codigo":"33.90.18.00","Despesa":"PNAES - Auxílio Alimentação (AA)","Valor":1656000},{"Codigo":"33.90.18.00","Despesa":"PNAES - Auxílio Moradia (AM)","Valor":432000},{"Codigo":"33.90.18.00","Despesa":"PROMISAES","Valor":135000},{"Codigo":"33.90.18.00","Despesa":"Bolsas Emergenciais para o ensino remoto: graduados","Valor":90000},{"Codigo":"33.90.18.00","Despesa":"Bolsas Emergenciais para o ensino remoto: tutoria com doutorado","Valor":80000},{"Codigo":"33.90.18.00","Despesa":"Auxílio emergencial para inclusão digital","Valor":1385000},{"Codigo":"33.90.18.00","Despesa":"Bolsas IC-AF","Valor":24000},{"Codigo":"33.90.18.00","Despesa":"PNAES - Auxílio emergencial para inclusão digital","Valor":239000},{"Codigo":"33.90.18.00","Despesa":"PNAES - Aumento BIA, AA e AM","Valor":174000},{"Codigo":"33.90.18.00","Despesa":"PNAES - Auxílio Emergencial","Valor":2076451}],"Total":13836251},{"Codigo":"33.90.20.00","CodigoSuperior":"33.90.20.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.20.00","Despesa":"Editais de fomento a pesquisador","Valor":30250},{"Codigo":"33.90.20.00","Despesa":"Auxílio a PPG","Valor":10000},{"Codigo":"33.90.20.00","Despesa":"Editais de fomento INOVA UNIRIO","Valor":52800}],"Total":93050},{"Codigo":"33.90.30.00","CodigoSuperior":"33.90.30.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.30.00","Despesa":"Manutenção da coleção do Herbário UNIRIO","Valor":10000},{"Codigo":"33.90.30.00","Despesa":"Material para manutenção predial","Valor":335000},{"Codigo":"33.90.30.00","Despesa":"Combustíveis e Lubrificantes","Valor":60000},{"Codigo":"33.90.30.00","Despesa":"Água mineral, café e açúcar","Valor":5000},{"Codigo":"33.90.30.00","Despesa":"Ressuprimento de almoxarifado e materiais de consumo diversos","Valor":900000}],"Total":1310000},{"Codigo":"33.90.30.17","CodigoSuperior":"33.90.30.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.30.17","Despesa":"TI - Material de consumo suprimentos de informática","Valor":150000}],"Total":150000},{"Codigo":"33.90.33.00","CodigoSuperior":"33.90.33.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.33.00","Despesa":"Passagens","Valor":200000},{"Codigo":"33.90.33.00","Despesa":"Passagens","Valor":10000}],"Total":210000},{"Codigo":"33.90.36.00","CodigoSuperior":"33.90.36.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.36.00","Despesa":"Serviços de pessoa física e GECC","Valor":45000},{"Codigo":"33.90.36.00","Despesa":"Outros Serviços Pessoa Física","Valor":15000},{"Codigo":"33.90.36.00","Despesa":"Gratificação por Encargo de Curso ou Concurso (GECC)","Valor":260000}],"Total":320000},{"Codigo":"33.90.37.00","CodigoSuperior":"33.90.37.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.37.00","Despesa":"Contrato de limpeza e higienização","Valor":4500000},{"Codigo":"33.90.37.00","Despesa":"Contrato de guarda e vigilância","Valor":8244000},{"Codigo":"33.90.37.00","Despesa":"Pessoal apoio - motoristas, continuos, recepcionistas e outros","Valor":5600000}],"Total":18344000},{"Codigo":"33.90.39.00","CodigoSuperior":"33.90.39.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.39.00","Despesa":"Internet patrocinada: Serviço Móvel Pessoal (SMP)","Valor":696000},{"Codigo":"33.90.39.00","Despesa":"Serviços de Hospedagem","Valor":5000},{"Codigo":"33.90.39.00","Despesa":"Serviço de promoção, organização e execução de eventos","Valor":20000},{"Codigo":"33.90.39.00","Despesa":"Serviços de confecção de material gráfico","Valor":57120},{"Codigo":"33.90.39.00","Despesa":"Serviços de editoração","Valor":10000},{"Codigo":"33.90.39.00","Despesa":"Escola de Museologia - Exposição Curricular","Valor":20000},{"Codigo":"33.90.39.00","Despesa":"Escola de Teatro - Prática de Montagem","Valor":20000},{"Codigo":"33.90.39.00","Despesa":"Manutenção do Biotério","Valor":18000},{"Codigo":"33.90.39.00","Despesa":"Auxílio para participação em atividades e eventos","Valor":20000},{"Codigo":"33.90.39.00","Despesa":"Projetos e Programas de graduação","Valor":170000},{"Codigo":"33.90.39.00","Despesa":"PNAES - Restaurante","Valor":42410},{"Codigo":"33.90.39.00","Despesa":"INCLUIR","Valor":62919},{"Codigo":"33.90.39.00","Despesa":"Taxas de inscrição e serviços","Valor":5000},{"Codigo":"33.90.39.00","Despesa":"Coleta resíduos sólidos","Valor":48000},{"Codigo":"33.90.39.00","Despesa":"Manutenção predial","Valor":2970000},{"Codigo":"33.90.39.00","Despesa":"Manutenção de elevadores","Valor":336000},{"Codigo":"33.90.39.00","Despesa":"Correio","Valor":18000},{"Codigo":"33.90.39.00","Despesa":"Telefonia","Valor":1386000},{"Codigo":"33.90.39.00","Despesa":"Energia Elétrica","Valor":2110000},{"Codigo":"33.90.39.00","Despesa":"Água e Esgoto","Valor":840000},{"Codigo":"33.90.39.00","Despesa":"Gás","Valor":24000},{"Codigo":"33.90.39.00","Despesa":"TI - Certificação digital","Valor":10000},{"Codigo":"33.90.39.00","Despesa":"Representação em Brasília","Valor":48000},{"Codigo":"33.90.39.00","Despesa":"Locação de Máquinas copiadoras","Valor":152000},{"Codigo":"33.90.39.00","Despesa":"Confecção de Carimbos e serviços de chaveiro","Valor":6000},{"Codigo":"33.90.39.00","Despesa":"Assinaturas","Valor":28250},{"Codigo":"33.90.39.00","Despesa":"Condomínio: Presidente Vargas e Rio Branco","Valor":288000},{"Codigo":"33.90.39.00","Despesa":"Benefícios e Pensões Indenizatórias","Valor":14055},{"Codigo":"33.90.39.00","Despesa":"Serviços de engenharia, reformas, adaptações e serviços diversos","Valor":1344518},{"Codigo":"33.90.39.00","Despesa":"Seguros - Alunos","Valor":20000},{"Codigo":"33.90.39.00","Despesa":"Seguros - Veículos","Valor":35000}],"Total":10824272},{"Codigo":"33.90.39.27","CodigoSuperior":"33.90.39.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.39.27","Despesa":"TI - Serviços","Valor":1250000}],"Total":1250000},{"Codigo":"33.90.47.00","CodigoSuperior":"33.90.47.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.47.00","Despesa":"IPTU - Taxa de Coleta de lixo","Valor":22000}],"Total":22000},{"Codigo":"33.90.93.00","CodigoSuperior":"33.90.93.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.90.93.00","Despesa":"Ressarcimento","Valor":804908},{"Codigo":"33.90.93.00","Despesa":"Ajuda de custo para moradia ou auxílio-moradia","Valor":22794}],"Total":827702},{"Codigo":"33.91.47.00","CodigoSuperior":"33.91.47.00","CodigoPrincipal":"33.00.00.00","Rows":[{"Codigo":"33.91.47.00","Despesa":"INSS – Obrigações Patronais","Valor":100950}],"Total":100950},{"Codigo":"44.90.39.00","CodigoSuperior":"44.90.39.00","CodigoPrincipal":"44.00.00.00","Rows":[{"Codigo":"44.90.39.00","Despesa":"TI - Software","Valor":185700},{"Codigo":"44.90.39.00","Despesa":"Manutenção do software Sophia","Valor":19680}],"Total":205380},{"Codigo":"44.90.51.00","CodigoSuperior":"44.90.51.00","CodigoPrincipal":"44.00.00.00","Rows":[{"Codigo":"44.90.51.00","Despesa":"Obras","Valor":310700}],"Total":310700},{"Codigo":"44.90.52.00","CodigoSuperior":"44.90.52.00","CodigoPrincipal":"44.00.00.00","Rows":[{"Codigo":"44.90.52.00","Despesa":"Material permanente","Valor":871098},{"Codigo":"44.90.52.00","Despesa":"Equipamentos para salas de gravação de videoaulas","Valor":143000},{"Codigo":"44.90.52.00","Despesa":"Manutenção da coleção do Herbário UNIRIO","Valor":6250},{"Codigo":"44.90.52.00","Despesa":"Manutenção do Biotério","Valor":10500},{"Codigo":"44.90.52.00","Despesa":"Manutenção, preservação e ampliação do acervo bibliográfico","Valor":368800}],"Total":1399648},{"Codigo":"44.90.52.35","CodigoSuperior":"44.90.52.00","CodigoPrincipal":"44.00.00.00","Rows":[{"Codigo":"44.90.52.35","Despesa":"TI - Material Permanente","Valor":932900}],"Total":932900}]
+[
+  {
+    "Codigo": "33.50.41.00",
+    "CodigoSuperior": "33.50.41.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.50.41.00",
+        "Despesa": "Entidades Nacionais: ABEC, CBBU, OCLC, ANDIFES, CRUB, ABEM, ANPED",
+        "Valor": 82255
+      }
+    ],
+    "Total": 82255
+  },
+  {
+    "Codigo": "33.80.41.00",
+    "CodigoSuperior": "33.80.41.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.80.41.00",
+        "Despesa": "Organismos Internacionais: Grupo Tordesilhas e OCLC",
+        "Valor": 14499
+      }
+    ],
+    "Total": 14499
+  },
+  {
+    "Codigo": "33.90.00.00",
+    "CodigoSuperior": "33.90.00.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.00.00",
+        "Despesa": "Escola de Música - Prática de Montagem",
+        "Valor": 15000
+      },
+      {
+        "Codigo": "33.90.00.00",
+        "Despesa": "Cursos de Extensão e Cultura",
+        "Valor": 50000
+      },
+      {
+        "Codigo": "33.90.00.00",
+        "Despesa": "Projetos e Programas de Extensão e Cultura",
+        "Valor": 20000
+      },
+      {
+        "Codigo": "33.90.00.00",
+        "Despesa": "Idiomas sem Fronteiras",
+        "Valor": 11000
+      }
+    ],
+    "Total": 96000
+  },
+  {
+    "Codigo": "33.90.14.00",
+    "CodigoSuperior": "33.90.14.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.14.00",
+        "Despesa": "Diárias pessoal civil",
+        "Valor": 5000
+      }
+    ],
+    "Total": 5000
+  },
+  {
+    "Codigo": "33.90.14.14",
+    "CodigoSuperior": "33.90.14.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.14.14",
+        "Despesa": "Diária de Pessoal Civil",
+        "Valor": 120000
+      }
+    ],
+    "Total": 120000
+  },
+  {
+    "Codigo": "33.90.18.00",
+    "CodigoSuperior": "33.90.18.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "Monitoria",
+        "Valor": 1840000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PET - UNIRIO",
+        "Valor": 96000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PROTES Tutoria Especial para Graduação",
+        "Valor": 132000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PRADIG",
+        "Valor": 220000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "Iniciação Científica",
+        "Valor": 1492800
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PIBEX Programa Institucional de Bolsas de Extensão",
+        "Valor": 880000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PIBCUL Programa Institucional de Bolsas de Cultura",
+        "Valor": 160000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "EAD - Programa Território e Trabalho",
+        "Valor": 168000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "MARCA Mobilidade Acadêmica",
+        "Valor": 48000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "BRACOL",
+        "Valor": 24000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "BRAMEX",
+        "Valor": 24000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PNAES - Bolsa Incentivo Acadêmico (BIA)",
+        "Valor": 2460000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PNAES - Auxílio Alimentação (AA)",
+        "Valor": 1656000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PNAES - Auxílio Moradia (AM)",
+        "Valor": 432000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PROMISAES",
+        "Valor": 135000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "Bolsas Emergenciais para o ensino remoto: graduados",
+        "Valor": 90000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "Bolsas Emergenciais para o ensino remoto: tutoria com doutorado",
+        "Valor": 80000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "Auxílio emergencial para inclusão digital",
+        "Valor": 1385000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "Bolsas IC-AF",
+        "Valor": 24000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PNAES - Auxílio emergencial para inclusão digital",
+        "Valor": 239000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PNAES - Aumento BIA, AA e AM",
+        "Valor": 174000
+      },
+      {
+        "Codigo": "33.90.18.00",
+        "Despesa": "PNAES - Auxílio Emergencial",
+        "Valor": 2076451
+      }
+    ],
+    "Total": 13836251
+  },
+  {
+    "Codigo": "33.90.20.00",
+    "CodigoSuperior": "33.90.20.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.20.00",
+        "Despesa": "Editais de fomento a pesquisador",
+        "Valor": 30250
+      },
+      {
+        "Codigo": "33.90.20.00",
+        "Despesa": "Auxílio a PPG",
+        "Valor": 10000
+      },
+      {
+        "Codigo": "33.90.20.00",
+        "Despesa": "Editais de fomento INOVA UNIRIO",
+        "Valor": 52800
+      }
+    ],
+    "Total": 93050
+  },
+  {
+    "Codigo": "33.90.30.00",
+    "CodigoSuperior": "33.90.30.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.30.00",
+        "Despesa": "Manutenção da coleção do Herbário UNIRIO",
+        "Valor": 10000
+      },
+      {
+        "Codigo": "33.90.30.00",
+        "Despesa": "Material para manutenção predial",
+        "Valor": 335000
+      },
+      {
+        "Codigo": "33.90.30.00",
+        "Despesa": "Combustíveis e Lubrificantes",
+        "Valor": 60000
+      },
+      {
+        "Codigo": "33.90.30.00",
+        "Despesa": "Água mineral, café e açúcar",
+        "Valor": 5000
+      },
+      {
+        "Codigo": "33.90.30.00",
+        "Despesa": "Ressuprimento de almoxarifado e materiais de consumo diversos",
+        "Valor": 900000
+      }
+    ],
+    "Total": 1310000
+  },
+  {
+    "Codigo": "33.90.30.17",
+    "CodigoSuperior": "33.90.30.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.30.17",
+        "Despesa": "TI - Material de consumo suprimentos de informática",
+        "Valor": 150000
+      }
+    ],
+    "Total": 150000
+  },
+  {
+    "Codigo": "33.90.33.00",
+    "CodigoSuperior": "33.90.33.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.33.00",
+        "Despesa": "Passagens",
+        "Valor": 200000
+      },
+      {
+        "Codigo": "33.90.33.00",
+        "Despesa": "Passagens",
+        "Valor": 10000
+      }
+    ],
+    "Total": 210000
+  },
+  {
+    "Codigo": "33.90.36.00",
+    "CodigoSuperior": "33.90.36.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.36.00",
+        "Despesa": "Serviços de pessoa física e GECC",
+        "Valor": 45000
+      },
+      {
+        "Codigo": "33.90.36.00",
+        "Despesa": "Outros Serviços Pessoa Física",
+        "Valor": 15000
+      },
+      {
+        "Codigo": "33.90.36.00",
+        "Despesa": "Gratificação por Encargo de Curso ou Concurso (GECC)",
+        "Valor": 260000
+      }
+    ],
+    "Total": 320000
+  },
+  {
+    "Codigo": "33.90.37.00",
+    "CodigoSuperior": "33.90.37.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.37.00",
+        "Despesa": "Contrato de limpeza e higienização",
+        "Valor": 4500000
+      },
+      {
+        "Codigo": "33.90.37.00",
+        "Despesa": "Contrato de guarda e vigilância",
+        "Valor": 8244000
+      },
+      {
+        "Codigo": "33.90.37.00",
+        "Despesa": "Pessoal apoio - motoristas, continuos, recepcionistas e outros",
+        "Valor": 5600000
+      }
+    ],
+    "Total": 18344000
+  },
+  {
+    "Codigo": "33.90.39.00",
+    "CodigoSuperior": "33.90.39.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Internet patrocinada: Serviço Móvel Pessoal (SMP)",
+        "Valor": 696000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Serviços de Hospedagem",
+        "Valor": 5000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Serviço de promoção, organização e execução de eventos",
+        "Valor": 20000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Serviços de confecção de material gráfico",
+        "Valor": 57120
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Serviços de editoração",
+        "Valor": 10000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Escola de Museologia - Exposição Curricular",
+        "Valor": 20000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Escola de Teatro - Prática de Montagem",
+        "Valor": 20000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Manutenção do Biotério",
+        "Valor": 18000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Auxílio para participação em atividades e eventos",
+        "Valor": 20000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Projetos e Programas de graduação",
+        "Valor": 170000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "PNAES - Restaurante",
+        "Valor": 42410
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "INCLUIR",
+        "Valor": 62919
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Taxas de inscrição e serviços",
+        "Valor": 5000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Coleta resíduos sólidos",
+        "Valor": 48000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Manutenção predial",
+        "Valor": 2970000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Manutenção de elevadores",
+        "Valor": 336000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Correio",
+        "Valor": 18000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Telefonia",
+        "Valor": 1386000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Energia Elétrica",
+        "Valor": 2110000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Água e Esgoto",
+        "Valor": 840000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Gás",
+        "Valor": 24000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "TI - Certificação digital",
+        "Valor": 10000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Representação em Brasília",
+        "Valor": 48000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Locação de Máquinas copiadoras",
+        "Valor": 152000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Confecção de Carimbos e serviços de chaveiro",
+        "Valor": 6000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Assinaturas",
+        "Valor": 28250
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Condomínio: Presidente Vargas e Rio Branco",
+        "Valor": 288000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Benefícios e Pensões Indenizatórias",
+        "Valor": 14055
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Serviços de engenharia, reformas, adaptações e serviços diversos",
+        "Valor": 1344518
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Seguros - Alunos",
+        "Valor": 20000
+      },
+      {
+        "Codigo": "33.90.39.00",
+        "Despesa": "Seguros - Veículos",
+        "Valor": 35000
+      }
+    ],
+    "Total": 10824272
+  },
+  {
+    "Codigo": "33.90.39.27",
+    "CodigoSuperior": "33.90.39.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.39.27",
+        "Despesa": "TI - Serviços",
+        "Valor": 1250000
+      }
+    ],
+    "Total": 1250000
+  },
+  {
+    "Codigo": "33.90.47.00",
+    "CodigoSuperior": "33.90.47.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.47.00",
+        "Despesa": "IPTU - Taxa de Coleta de lixo",
+        "Valor": 22000
+      }
+    ],
+    "Total": 22000
+  },
+  {
+    "Codigo": "33.90.93.00",
+    "CodigoSuperior": "33.90.93.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.90.93.00",
+        "Despesa": "Ressarcimento",
+        "Valor": 804908
+      },
+      {
+        "Codigo": "33.90.93.00",
+        "Despesa": "Ajuda de custo para moradia ou auxílio-moradia",
+        "Valor": 22794
+      }
+    ],
+    "Total": 827702
+  },
+  {
+    "Codigo": "33.91.47.00",
+    "CodigoSuperior": "33.91.47.00",
+    "CodigoPrincipal": "33.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "33.91.47.00",
+        "Despesa": "INSS – Obrigações Patronais",
+        "Valor": 100950
+      }
+    ],
+    "Total": 100950
+  },
+  {
+    "Codigo": "44.90.39.00",
+    "CodigoSuperior": "44.90.39.00",
+    "CodigoPrincipal": "44.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "44.90.39.00",
+        "Despesa": "TI - Software",
+        "Valor": 185700
+      },
+      {
+        "Codigo": "44.90.39.00",
+        "Despesa": "Manutenção do software Sophia",
+        "Valor": 19680
+      }
+    ],
+    "Total": 205380
+  },
+  {
+    "Codigo": "44.90.51.00",
+    "CodigoSuperior": "44.90.51.00",
+    "CodigoPrincipal": "44.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "44.90.51.00",
+        "Despesa": "Obras",
+        "Valor": 310700
+      }
+    ],
+    "Total": 310700
+  },
+  {
+    "Codigo": "44.90.52.00",
+    "CodigoSuperior": "44.90.52.00",
+    "CodigoPrincipal": "44.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "44.90.52.00",
+        "Despesa": "Material permanente",
+        "Valor": 871098
+      },
+      {
+        "Codigo": "44.90.52.00",
+        "Despesa": "Equipamentos para salas de gravação de videoaulas",
+        "Valor": 143000
+      },
+      {
+        "Codigo": "44.90.52.00",
+        "Despesa": "Manutenção da coleção do Herbário UNIRIO",
+        "Valor": 6250
+      },
+      {
+        "Codigo": "44.90.52.00",
+        "Despesa": "Manutenção do Biotério",
+        "Valor": 10500
+      },
+      {
+        "Codigo": "44.90.52.00",
+        "Despesa": "Manutenção, preservação e ampliação do acervo bibliográfico",
+        "Valor": 368800
+      }
+    ],
+    "Total": 1399648
+  },
+  {
+    "Codigo": "44.90.52.35",
+    "CodigoSuperior": "44.90.52.00",
+    "CodigoPrincipal": "44.00.00.00",
+    "Rows": [
+      {
+        "Codigo": "44.90.52.35",
+        "Despesa": "TI - Material Permanente",
+        "Valor": 932900
+      }
+    ],
+    "Total": 932900
+  }
+]

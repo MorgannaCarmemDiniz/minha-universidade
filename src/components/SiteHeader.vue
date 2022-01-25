@@ -22,6 +22,9 @@
                         <router-link class="navItem" to="/glossario">
                             Glossário
                         </router-link>
+                        <router-link class="navItem" to="/forum">
+                            Fórum
+                        </router-link>
                         <router-link class="navItem" to="/universidades">
                             Universidades
                         </router-link>
@@ -30,19 +33,22 @@
         </b-navbar>
 
         <div class="navBarMobile">
-            <font-awesome-icon class="faIcon" icon="bars" @click="mobileNavExpanded = !mobileNavExpanded" />
-            <div class="navBarMobileNav" :class="{'invisible': !mobileNavExpanded}">
-                <router-link class="navItem" to="/">
-                    Início
-                </router-link>
-                <router-link class="navItem" to="/glossario">
-                    Glossário
-                </router-link>
-                <router-link class="navItem" to="/universidades">
-                    Universidades
-                </router-link>
-            </div>
+        <font-awesome-icon class="faIcon" icon="bars" @click="mobileNavExpanded = !mobileNavExpanded" />
+        <div class="navBarMobileNav" :class="{'invisible': !mobileNavExpanded}">
+            <router-link class="navItem" to="/">
+                Início
+            </router-link>
+            <router-link class="navItem" to="/glossario">
+                Glossário
+            </router-link>
+            <router-link class="navItem" to="/forum">
+                Fórum
+            </router-link>
+            <router-link class="navItem" to="/universidades">
+                Universidades
+            </router-link>
         </div>
+    </div>
     </div>
 </template>
 

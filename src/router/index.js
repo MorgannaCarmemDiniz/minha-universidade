@@ -7,7 +7,9 @@ import Universidade from "../views/Universidade/Universidade.vue";
 import Universidades from "../views/Universidades/Universidades.vue";
 import ViewDataSheet from "../views/ViewDataSheet.vue";
 import Creditos from "../views/Creditos/Creditos.vue";
+import Forum from "../views/Forum/Forum.vue";
 import universities from "../../spreadsheetParser/data/Universities.js";
+import Janeiro22 from "../views/Entrevistas/Janeiro22.vue";
 
 Vue.use(VueRouter);
 
@@ -42,6 +44,16 @@ const routes = [
     path: '/creditos',
     name: 'Créditos',
     component: Creditos
+  },
+  {
+    path: '/forum',
+    name: 'Fórum',
+    component: Forum
+  },
+  {
+    path: '/entrevistas/janeiro22',
+    name: 'Entrevista - Janeiro/22',
+    component: Janeiro22
   }
 ];
 

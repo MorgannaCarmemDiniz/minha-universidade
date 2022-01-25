@@ -44,8 +44,8 @@
             text-align: center;
 
             img {
-                width: 80%;
-                height: 80%;
+                width: auto;
+                height: 70px;
                 object-fit: contain;
             }
         }

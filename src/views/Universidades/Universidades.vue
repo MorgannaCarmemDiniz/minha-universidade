@@ -42,6 +42,15 @@
 </script>
 
 <style lang="scss" scoped>
+
+    @media (min-width: 767.98px) {
+        .universityList {
+            > * {
+                max-width: 33%;
+            }
+        }
+    }
+
     .universityList {
         display: flex;
         flex-wrap: wrap;
@@ -50,10 +59,6 @@
 
         a {
             text-decoration: none !important;
-        }
-
-        > * {
-            max-width: 30%;
         }
     }
 
