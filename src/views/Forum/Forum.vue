@@ -3,10 +3,9 @@
         <h2>Entrevistas 2022</h2>
         <ul>
             <li><router-link to="/entrevistas/janeiro22">
-                Janeiro/22
-            </router-link></li>
-            <li>Fevereiro/22</li>
-            <li>Março/22</li>
+                Janeiro/22 : entrevista com a Profa. Claudia Cappelli sobre transparência em Sistemas de Informação            
+                </router-link>
+            </li>
         </ul>
     </div>
 </template>

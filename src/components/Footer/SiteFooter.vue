@@ -26,6 +26,10 @@
                     <router-link class="navItem" to="/glossario">
                         Glossário
                     </router-link>
+                    <router-link class="navItem" to="/forum">
+                        Fórum
+                    </router-link>
+
                     <router-link class="navItem" to="/universidades">
                         Universidades
                     </router-link>
@@ -39,7 +43,6 @@
                     Contato
                 </h5>
                 <p>
-
                     <a href="mailto:morganna@uniriotec.br">
                         <font-awesome-icon class="faIcon" icon="envelope" />
                          morganna@uniriotec.br
