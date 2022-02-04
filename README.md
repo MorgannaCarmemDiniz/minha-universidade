@@ -27,7 +27,21 @@ Para atualizar o site hospedado no Hostinger com as novas alterações feitas, �
 ```
 npm run build  
 ```
-2. Pegar os arquivos dentro da pasta `/dist` gerada e colocar dentro da pasta `/public_html` no Hostinger para atualizar o site com as novas mudanças.  
+2. Pegar os arquivos dentro da pasta `/dist` gerada e colocar dentro da pasta `/public_html` no Hostinger para atualizar o site com as novas mudanças.
+
+### Atualizar GitHub
+1. Para garantir que todas as mudanças sejam adicionadas ao commit
+```
+git add .
+```
+2. Para enviar as alterações para o repositório LOCAL do GIT
+```
+git commit -m "mensagem do commit"
+```
+3. Para enviar as alterações do repositório local para o repositório remoto do GitHub (deve-se gerar um token com permissão de admnistrador para usar como senha)
+```
+git push
+```
   
 ## Estrutura do Projeto
 
