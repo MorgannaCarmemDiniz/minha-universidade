@@ -3,15 +3,16 @@
     <h2>Entrevista Janeiro - 2022</h2>
     <ul>
         <li><b>Artigo:</b> <a href="http://www2.sbc.org.br/ce-si/arquivos/GranDSI-BR_Ebook-Final.pdf" target="_blank">
-            Transparency in Information Systems. Grand Research Challenges</a>
-            in IS in Brazil ‐ 2016‐2026. Pag.73-89.</li>
-        <li><b>Pesquisador entrevistado: </b> Profa. Cláudia Cappelli (UERJ)</li>
+            Transparency in Information Systems. Grand Research Challenges
+            in IS in Brazil ‐ 2016‐2026. Pag.73-89.</a></li>
+        <li><b>Pesquisador entrevistado: </b> <a href="http://lattes.cnpq.br/4930762936357558" target="_blank">
+            Profa. Cláudia Cappelli</a> (UERJ)</li>
     </ul>
 
     <br><br>
 
-    <p><b>Profa. Morganna –</b> Professora Claudia, vamos começar com o básico. O que é transparência na sua 
-visão?</p>
+    <p><b>Profa. Morganna –</b> Professora Claudia, vamos começar com o básico. O que é transparência na sua
+    visão?</p>
 
     <p><b>Profa. Cláudia</b> – É sempre um prazer falar sobre transparência, pois esse foi o tema da minha tese
     de doutorado. Eu estudo isso há muitos anos e tenho vários artigos publicados neste tema. E este é um
