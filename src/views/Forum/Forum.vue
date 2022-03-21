@@ -8,9 +8,16 @@
                 </router-link>
             </li>
             <li><router-link to="/entrevistas/fevereiro22">
-                Fevereiro/22 : entrevista com o Prof. Steven Dutt-Ross sobre transparência orçamentária            
+                Fevereiro/22 : entrevista com o Prof. Steven Dutt-Ross sobre transparência orçamentária
+                <br><br>            
                 </router-link>
             </li>
+            <li><router-link to="/entrevistas/marco22">
+                Março/22 : entrevista com o Prof. Sean Siqueira sobre dados abertos
+                <br><br>          
+                </router-link>
+            </li>
+
         </ul>
     </div>
 </template>
