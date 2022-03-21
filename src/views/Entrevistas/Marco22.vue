@@ -3,8 +3,8 @@
     <h2>Entrevista Janeiro - 2022</h2>
     <ul>
         <li><b>Artigo:</b> <a href="http://www2.sbc.org.br/ce-si/arquivos/GranDSI-BR_Ebook-Final.pdf" target="_blank">
-            Transparency in Information Systems. Grand Research Challenges
-            in IS in Brazil ‐ 2016‐2026. Pag.52-61.</a></li>
+            Information Systems based on (Linked) Open Data: From Openness to InnovationTransparency in Information 
+            Systems</a>. Grand Research Challenges in IS in Brazil ‐ 2016‐2026. Chapter 5, Pag.52-61.</li>
         <li><b>Pesquisador entrevistado: </b> <a href="http://lattes.cnpq.br/2562652838103607" target="_blank">
             Prof. Sean Wolfgand Matsui Siqueira</a> (UNIRIO)</li>
     </ul>
