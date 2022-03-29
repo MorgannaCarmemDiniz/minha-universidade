@@ -107,7 +107,7 @@
                         TOTAL
                     </td>
                     <td class="totalTD font-weight-bold">
-                        Despesa Primária Obrigatória
+                        Despesa Primária Discricionária
                     </td>
                     <td class="totalTD font-weight-bold text-right">
                         {{formatCurrency(acoesFinal.primariaDiscricionaria.totalPago)}}
