@@ -17,6 +17,11 @@
                 <br><br>          
                 </router-link>
             </li>
+            <li><router-link to="/entrevistas/abril22">
+                Abril/22 : entrevista com os Professores Tadeu Classe e Henrique Sousa sobre transparência e combate à corrupção
+                <br><br>          
+                </router-link>
+            </li>
 
         </ul>
     </div>

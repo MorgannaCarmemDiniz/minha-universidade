@@ -12,6 +12,7 @@ import universities from "../../spreadsheetParser/data/Universities.js";
 import Janeiro22 from "../views/Entrevistas/Janeiro22.vue";
 import Fevereiro22 from "../views/Entrevistas/Fevereiro22.vue";
 import Marco22 from "../views/Entrevistas/Marco22.vue";
+import Abril22 from "../views/Entrevistas/Abril22.vue";
 
 Vue.use(VueRouter);
 
@@ -66,6 +67,11 @@ const routes = [
     path: '/entrevistas/marco22',
     name: 'Entrevista - Março/22',
     component: Marco22
+  },
+  {
+    path: '/entrevistas/abril22',
+    name: 'Entrevista - Abril/22',
+    component: Abril22
   }
 ];
 
