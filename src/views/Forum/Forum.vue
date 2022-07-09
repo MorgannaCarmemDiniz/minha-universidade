@@ -22,6 +22,11 @@
                 <br><br>          
                 </router-link>
             </li>
+            <li><router-link to="/entrevistas/julho22">
+                Julho/22 : entrevista com a Professora Renata Araujo sobre transparência no serviço público
+                <br><br>          
+                </router-link>
+            </li>
 
         </ul>
     </div>

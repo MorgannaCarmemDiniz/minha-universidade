@@ -13,6 +13,7 @@ import Janeiro22 from "../views/Entrevistas/Janeiro22.vue";
 import Fevereiro22 from "../views/Entrevistas/Fevereiro22.vue";
 import Marco22 from "../views/Entrevistas/Marco22.vue";
 import Abril22 from "../views/Entrevistas/Abril22.vue";
+import Julho22 from "../views/Entrevistas/Julho22.vue";
 
 Vue.use(VueRouter);
 
@@ -72,6 +73,11 @@ const routes = [
     path: '/entrevistas/abril22',
     name: 'Entrevista - Abril/22',
     component: Abril22
+  },
+  {
+    path: '/entrevistas/julho22',
+    name: 'Entrevista - Julho/22',
+    component: Julho22
   }
 ];
 
